@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
+from datetime import datetime
+
 import os
+import base64
+import hashlib
 from functools import wraps
 from io import BytesIO
 from logging.config import dictConfig
@@ -7,6 +11,7 @@ from logging.config import dictConfig
 from flask import Flask, url_for, render_template, session, redirect, json, send_file
 from flask_oauthlib.contrib.client import OAuth, OAuth2Application
 from flask_session import Session
+import requests
 from xero_python.accounting import AccountingApi, ContactPerson, Contact, Contacts
 from xero_python.api_client import ApiClient, serialize
 from xero_python.api_client.configuration import Configuration
@@ -20,166 +25,136 @@ import logging_settings
 from utils import jsonify, serialize_model
 
 import dateutil
-
-dictConfig(logging_settings.default_settings)
-
-# configure main flask application
-app = Flask(__name__)
-app.config.from_object("default_settings")
-app.config.from_pyfile("config.py", silent=True)
-
-if app.config["ENV"] != "production":
-    # allow oauth2 loop to run over http (used for local testing only)
-    os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
-
-# configure persistent session cache
-Session(app)
-
-# configure flask-oauthlib application
-# TODO fetch config from https://identity.xero.com/.well-known/openid-configuration #1
-oauth = OAuth(app)
-xero = oauth.remote_app(
-    name="xero",
-    version="2",
-    client_id=app.config["CLIENT_ID"],
-    client_secret=app.config["CLIENT_SECRET"],
-    endpoint_url="https://api.xero.com/",
-    authorization_url="https://login.xero.com/identity/connect/authorize",
-    access_token_url="https://identity.xero.com/connect/token",
-    refresh_token_url="https://identity.xero.com/connect/token",
-    scope='email accounting.budgets.read offline_access payroll.timesheets accounting.settings.read payroll.payruns payroll.payslip accounting.reports.read accounting.attachments.read files.read assets payroll.settings accounting.journals.read payroll.employees accounting.settings accounting.transactions.read accounting.transactions files accounting.attachments projects accounting.contacts accounting.contacts.read projects.read openid profile assets.read'
-)  # type: OAuth2Application
+from decimal import Decimal
+from dateutil.parser import parse as date_parse
 
 
-# configure xero-python sdk client
-api_client = ApiClient(
-    Configuration(
-        debug=app.config["DEBUG"],
-        oauth2_token=OAuth2Token(
-            client_id=app.config["CLIENT_ID"], client_secret=app.config["CLIENT_SECRET"]
-        ),
-    ),
-    pool_threads=1,
-)
+CLIENT_ID = '7A62E45022044D3A8DE844CB91AC88CC'
+CLIENT_SECRET = 'qVEhGH8r1pkYZi6lML-tWF6PRRFe9eZI570q_Uzcis0RGUVz'
+REDIRECT_URI = 'http://localhost:5000/callback'
+AUTHORIZATION_URL = 'https://login.xero.com/identity/connect/authorize'
+TOKEN_URL = 'https://identity.xero.com/connect/token'
+BASE_URL = 'https://api.xero.com/api.xro/2.0/'
+
+TODO: "I can pull charts of accounts from each client which will serve as the category list when I make their google sheet. Transaction Type column in Sheet will be the bankTransaction description. Need to figure out how to store pending transactions so when customer clarifies category I can update proper bank transaction. Maybe store bank transactionId in the sheet?"
 
 
-# configure token persistence and exchange point between flask-oauthlib and xero-python
-@xero.tokengetter
-@api_client.oauth2_token_getter
-def obtain_xero_oauth2_token():
-    return session.get("token")
 
+def accounting_get_bank_transactions(access_token, tenant_id):
+    url = BASE_URL + 'BankTransactions'
+    headers = {
+        'Authorization': f'Bearer {access_token}',
+        'Accept': 'application/json',
+        'Xero-tenant-id': tenant_id
+    }
+    params = {
+        'if-modified-since': '2024-02-06T12:17:43.202-08:00',
+    }
+    response = requests.get(url, headers=headers, params=params)
+    if response.status_code == 200:
+        return response.json()
+    else:
+        print(f"Error: {response.status_code} - {response.text}")
+        return None
 
-@xero.tokensaver
-@api_client.oauth2_token_saver
-def store_xero_oauth2_token(token):
-    session["token"] = token
-    session.modified = True
+# Function to get journals
+def accounting_get_journals(access_token, tenant_id):
+    url = BASE_URL + 'Journals'
+    headers = {
+        'Authorization': f'Bearer {access_token}',
+        'Accept': 'application/json',
+        'Xero-tenant-id': tenant_id
+    }
+    params = {
+        'if-modified-since': '2024-02-06T12:17:43.202-08:00'
+    }
+    response = requests.get(url, headers=headers, params=params)
+    if response.status_code == 200:
+        journals = response.json()
+        uncategorized_journals = []
 
-
-def xero_token_required(function):
-    @wraps(function)
-    def decorator(*args, **kwargs):
-        xero_token = obtain_xero_oauth2_token()
-        if not xero_token:
-            return redirect(url_for("login", _external=True))
-
-        return function(*args, **kwargs)
-
-    return decorator
-
-
-@app.route("/")
-def index():
-    xero_access = dict(obtain_xero_oauth2_token() or {})
-    accounting_update_bank_transaction()
-    accounting_get_bank_transactions()
-    # accounting_get_journals()
-    return render_template(
-        "code.html",
-        title="Home | oauth token",
-        code=json.dumps(xero_access, sort_keys=True, indent=4),
-    )
-
-
-@app.route("/tenants")
-@xero_token_required
-def tenants():
-    identity_api = IdentityApi(api_client)
-    accounting_api = AccountingApi(api_client)
-
-    available_tenants = []
-    for connection in identity_api.get_connections():
-        tenant = serialize(connection)
-        if connection.tenant_type == "ORGANISATION":
-            organisations = accounting_api.get_organisations(
-                xero_tenant_id=connection.tenant_id
-            )
-            tenant["organisations"] = serialize(organisations)
-
-        available_tenants.append(tenant)
-
-    return render_template(
-        "code.html",
-        title="Xero Tenants",
-        code=json.dumps(available_tenants, sort_keys=True, indent=4),
-    )
-
-@app.route("/transactions")
-def accounting_get_bank_transactions():
-    api_instance = AccountingApi(api_client)
-    xero_tenant_id = 'c0395c8a-b2e1-4c3c-b697-7e4094d9ad9b'
-    if_modified_since = dateutil.parser.parse("2024-02-24T12:17:43.202-08:00")
-    where = 'Status=="AUTHORISED"'
-    order = 'Type ASC'
-    
-    try:
-        response = api_instance.get_bank_transactions(xero_tenant_id, if_modified_since)
-        print(response.to_dict())
-        print(type(response))
-        return response.to_dict()
-    except AccountingBadRequestException as e:
-        print("Exception when calling AccountingApi->getBankTransactions: %s\n" % e)
-
-@app.route("/journals")
-def accounting_get_journals():
-    api_instance = AccountingApi(api_client)
-    xero_tenant_id = 'c0395c8a-b2e1-4c3c-b697-7e4094d9ad9b'
-    if_modified_since = dateutil.parser.parse("2024-02-06T12:17:43.202-08:00")
-    where = 'Status=="DRAFT"'
-    order = 'Date ASC'
-    
-    try:
-        api_response = api_instance.get_journals(xero_tenant_id, if_modified_since)
-        journals = api_response.to_dict()
         # Assuming 'journals' is a list of journal entries structured as in the provided data excerpt
-        for journal in journals['journals']:
+        for journal in journals.get('Journals', []):
             # Check if any journal line in the current journal has 'account_name' == 'Uncategorized Expense'
-            if any(line['account_name'] == 'Uncategorized Expense' for line in journal['journal_lines']):
-                # Convert the journal to a JSON string for pretty printing
-                print(json.dumps(journal, indent=4, default=str))    
-    except AccountingBadRequestException as e:
-                print("Exception when calling AccountingApi->getManualJournals: %s\n" % e)
+            if any(line['AccountName'] == 'Uncategorized Expense' for line in journal['JournalLines']):
+                uncategorized_journals.append(journal)
+        
+        # Return the list of uncategorized journals
+        return uncategorized_journals
+    else:
+        print(f"Error: {response.status_code} - {response.text}")
+        return None
 
-def accounting_update_bank_transaction():
-    api_instance = AccountingApi(api_client)
-    xero_tenant_id = 'c0395c8a-b2e1-4c3c-b697-7e4094d9ad9b'
-    bank_transaction_id = "67590043-2c76-4c4f-828c-bea22fe78170"
+def get_matched_transactions(access_token, tenant_id):
+    # Fetch bank transactions
+    bank_transactions_response = accounting_get_bank_transactions(access_token, tenant_id)
+    if 'error' in bank_transactions_response:
+        return jsonify(bank_transactions_response), 400
+
+    bank_transactions = bank_transactions_response['BankTransactions']
+
+    # Fetch journals
+    journals_response = accounting_get_journals(access_token, tenant_id)
+    if 'error' in journals_response:
+        return jsonify(journals_response), 400
+
+    # Match transactions
+    matches = match_transactions(bank_transactions, journals_response)
+
+    return jsonify(matches)
+
+def match_transactions(bank_transactions, journals):
+    matches = []
+
+    for journal in journals:
+        journal_date = journal['JournalDate']
+        for journal_line in journal['JournalLines']:
+            if journal_line['AccountName'] == 'Uncategorized Expense':  # Identify uncategorized expenses
+                gross_amount = abs(Decimal(journal_line['GrossAmount']))
+                description = journal_line['Description']
+                
+                for transaction in bank_transactions:
+                    # print(transaction)
+                    transaction_date = transaction['Date']
+                    # print(journal_date)
+                    # print(transaction_date)
+                    # if (journal_date == transaction_date):
+                    #     print("Match")
+                    # print(Decimal(transaction['Total']))
+                    # print(gross_amount)
+                    # print('\n')
+                    if (
+                        Decimal(transaction['Total']) == gross_amount and
+                        transaction_date == journal_date
+                    ):
+                        matches.append({
+                            'date': journal['JournalDate'],
+                            'description': description,
+                            'gross_amount': str(gross_amount),
+                            'bank_transaction_id': transaction['BankTransactionID'],
+                            'contact_id': transaction['Contact']['ContactID'],
+                            'account_id': transaction['BankAccount']['AccountID']
+                        })
+    print(matches)                    
+    return matches
+
+def accounting_update_bank_transaction(tenant_id, bank_transaction_id, contact_id, account_id, amount, category):
+    xero_tenant_id = tenant_id
+    bank_transaction_id = bank_transaction_id
 
     contact = Contact(
-        contact_id = "a3c639f0-b434-4022-9e74-2178424aae0d")
+        contact_id = contact_id)
 
     line_item = LineItem(
-        description = "Unknown",
         quantity = 1.0,
-        unit_amount = 5000.0,
-        account_code = "Test")
+        unit_amount = amount,
+        account_code = category)
     
     line_items = []    
     line_items.append(line_item)
 
     bank_account = Account(
-        account_id = "7b4f245e-e130-483f-85a1-72c2d464fe64")
+        account_id = account_id)
 
     bank_transaction = BankTransaction(
         reference = "",
@@ -192,188 +167,119 @@ def accounting_update_bank_transaction():
         bank_transactions = [bank_transaction])
     
     try:
-        api_response = api_instance.update_bank_transaction(xero_tenant_id, bank_transaction_id, bankTransactions)
-        print(api_response)
+        api_instance.update_bank_transaction(xero_tenant_id, bank_transaction_id, bankTransactions)
     except AccountingBadRequestException as e:
         print("Exception when calling AccountingApi->updateBankTransaction: %s\n" % e)
 
-@app.route("/transfers")
-def accounting_get_bank_transfers():
-    api_instance = AccountingApi(api_client)
-    xero_tenant_id = 'YOUR_XERO_TENANT_ID'
-    if_modified_since = dateutil.parser.parse("2020-02-06T12:17:43.202-08:00")
-    where = 'HasAttachments==true'
-    order = 'Amount ASC'
+def generate_code_verifier():
+    verifier = base64.urlsafe_b64encode(os.urandom(32)).decode('utf-8').rstrip('=')
+    return verifier
+
+def generate_code_challenge(verifier):
+    challenge = base64.urlsafe_b64encode(hashlib.sha256(verifier.encode('utf-8')).digest()).decode('utf-8').rstrip('=')
+    return challenge
+
+def get_authorization_url(verifier, challenge):
+    params = {
+        'response_type': 'code',
+        'client_id': CLIENT_ID,
+        'redirect_uri': REDIRECT_URI,
+        'scope': 'openid profile email accounting.transactions accounting.attachments',
+        'code_challenge': challenge,
+        'code_challenge_method': 'S256',
+    }
+    request_url = requests.Request('GET', AUTHORIZATION_URL, params=params).prepare().url
+    return request_url
+
+def get_access_token(authorization_code, code_verifier):
+    # Create the authorization header
+    auth_header = base64.b64encode(f"{CLIENT_ID}:{CLIENT_SECRET}".encode()).decode()
+
+    # Prepare the data for the POST request
+    data = {
+        'grant_type': 'authorization_code',
+        'code': authorization_code,
+        'redirect_uri': REDIRECT_URI,
+        'client_id': CLIENT_ID,  # PKCE flow requires client_id in the body
+        'code_verifier': code_verifier
+    }
+
+    headers = {
+        'Authorization': f"Basic {auth_header}",
+        'Content-Type': 'application/x-www-form-urlencoded'
+    }
+
+    # Make the POST request to get the access token
+    response = requests.post(TOKEN_URL, data=data, headers=headers)
     
-    try:
-        api_response = api_instance.get_bank_transfers(xero_tenant_id, if_modified_since, where, order)
-        print(api_response)
-    except AccountingBadRequestException as e:
-        print("Exception when calling AccountingApi->getBankTransfers: %s\n" % e)
+    # Check if the response is successful
+    if response.status_code != 200:
+        raise Exception(f"Error fetching access token: {response.text}")
 
-@app.route("/create-contact-person")
-@xero_token_required
-def create_contact_person():
-    xero_tenant_id = get_xero_tenant_id()
-    accounting_api = AccountingApi(api_client)
+    return response.json()
 
-    contact_person = ContactPerson(
-        first_name="John",
-        last_name="Smith",
-        email_address="john.smith@24locks.com",
-        include_in_emails=True,
-    )
-    contact = Contact(
-        name="FooBar",
-        first_name="Foo",
-        last_name="Bar",
-        email_address="ben.bowden@24locks.com",
-        contact_persons=[contact_person],
-    )
-    contacts = Contacts(contacts=[contact])
-    try:
-        created_contacts = accounting_api.create_contacts(
-            xero_tenant_id, contacts=contacts
-        )  # type: Contacts
-    except AccountingBadRequestException as exception:
-        sub_title = "Error: " + exception.reason
-        code = jsonify(exception.error_data)
+def refresh_access_token(refresh_token):
+    data = {
+        'grant_type': 'refresh_token',
+        'refresh_token': refresh_token,
+        'client_id': CLIENT_ID,
+        'client_secret': CLIENT_SECRET,
+    }
+    response = requests.post(TOKEN_URL, data=data)
+    print(response.json())
+    return response.json()
+
+def get_tenants(access_token):
+    url = 'https://identity.xero.com/api.xro/2.0/Connections'
+    headers = {
+        'Authorization': f'Bearer {access_token}',
+        'Accept': 'application/json',
+    }
+    response = requests.get(url, headers=headers)
+
+    
+    if response.status_code == 200:
+        return response.json()
     else:
-        sub_title = "Contact {} created.".format(
-            getvalue(created_contacts, "contacts.0.name", "")
-        )
-        code = serialize_model(created_contacts)
-
-    return render_template(
-        "code.html", title="Create Contacts", code=code, sub_title=sub_title
-    )
-
-
-@app.route("/create-multiple-contacts")
-@xero_token_required
-def create_multiple_contacts():
-    xero_tenant_id = get_xero_tenant_id()
-    accounting_api = AccountingApi(api_client)
-
-    contact = Contact(
-        name="George Jetson",
-        first_name="George",
-        last_name="Jetson",
-        email_address="george.jetson@aol.com",
-    )
-    # Add the same contact twice - the first one will succeed, but the
-    # second contact will fail with a validation error which we'll show.
-    contacts = Contacts(contacts=[contact, contact])
-    try:
-        created_contacts = accounting_api.create_contacts(
-            xero_tenant_id, contacts=contacts, summarize_errors=False
-        )  # type: Contacts
-    except AccountingBadRequestException as exception:
-        sub_title = "Error: " + exception.reason
-        result_list = None
-        code = jsonify(exception.error_data)
-    else:
-        sub_title = ""
-        result_list = []
-        for contact in created_contacts.contacts:
-            if contact.has_validation_errors:
-                error = getvalue(contact.validation_errors, "0.message", "")
-                result_list.append("Error: {}".format(error))
-            else:
-                result_list.append("Contact {} created.".format(contact.name))
-
-        code = serialize_model(created_contacts)
-
-    return render_template(
-        "code.html",
-        title="Create Multiple Contacts",
-        code=code,
-        result_list=result_list,
-        sub_title=sub_title,
-    )
-
-
-@app.route("/invoices")
-@xero_token_required
-def get_invoices():
-    xero_tenant_id = get_xero_tenant_id()
-    accounting_api = AccountingApi(api_client)
-
-    invoices = accounting_api.get_invoices(
-        xero_tenant_id, statuses=["DRAFT", "SUBMITTED"]
-    )
-    code = serialize_model(invoices)
-    sub_title = "Total invoices found: {}".format(len(invoices.invoices))
-
-    return render_template(
-        "code.html", title="Invoices", code=code, sub_title=sub_title
-    )
-
-
-@app.route("/login")
-def login():
-    redirect_url = url_for("oauth_callback", _external=True)
-    response = xero.authorize(callback_uri=redirect_url)
-    return response
-
-
-@app.route("/callback")
-def oauth_callback():
-    try:
-        response = xero.authorized_response()
-    except Exception as e:
-        print(e)
-        raise
-    # todo validate state value
-    if response is None or response.get("access_token") is None:
-        return "Access denied: response=%s" % response
-    store_xero_oauth2_token(response)
-    return redirect(url_for("index", _external=True))
-
-
-@app.route("/logout")
-def logout():
-    store_xero_oauth2_token(None)
-    return redirect(url_for("index", _external=True))
-
-
-@app.route("/export-token")
-@xero_token_required
-def export_token():
-    token = obtain_xero_oauth2_token()
-    buffer = BytesIO("token={!r}".format(token).encode("utf-8"))
-    buffer.seek(0)
-    return send_file(
-        buffer,
-        mimetype="x.python",
-        as_attachment=True,
-        attachment_filename="oauth2_token.py",
-    )
-
-
-@app.route("/refresh-token")
-@xero_token_required
-def refresh_token():
-    xero_token = obtain_xero_oauth2_token()
-    new_token = api_client.refresh_oauth2_token()
-    return render_template(
-        "code.html",
-        title="Xero OAuth2 token",
-        code=jsonify({"Old Token": xero_token, "New token": new_token}),
-        sub_title="token refreshed",
-    )
-
-
-def get_xero_tenant_id():
-    token = obtain_xero_oauth2_token()
-    if not token:
+        print(f"Error: {response.status_code} - {response.text}")
         return None
 
-    identity_api = IdentityApi(api_client)
-    for connection in identity_api.get_connections():
-        if connection.tenant_type == "ORGANISATION":
-            return connection.tenant_id
+def get_chart_of_accounts(access_token, tenant_id):
+    url = 'https://api.xero.com/api.xro/2.0/Accounts'
+    headers = {
+        'Authorization': f'Bearer {access_token}',
+        'Xero-Tenant-Id': tenant_id,
+        'Accept': 'application/json',
+    }
+    response = requests.get(url, headers=headers)
 
+    
+    if response.status_code == 200:
+        return response.json()
+    else:
+        print(f"Error: {response.status_code} - {response.text}")
+        return None
 
 if __name__ == '__main__':
-    app.run(host='localhost', port=5000)
+    # code_verifier = generate_code_verifier()
+    # code_challenge = generate_code_challenge(code_verifier)
+    
+    # # Get the authorization URL
+    # auth_url = get_authorization_url(code_verifier, code_challenge)
+    # print("Go to the following URL to authorize the application:")
+    # print(auth_url)
+    
+    # # After the user authorizes the app, they will be redirected to the redirect URI with a code
+    # authorization_code = input("Enter the authorization code: ")
+    
+    # # Exchange the authorization code for an access token
+    # token_data = get_access_token(authorization_code, code_verifier)
+    # print(token_data)
+    # access_token = token_data['access_token']
+    # refresh_token = token_data['refresh_token']
+    
+    # print("Access Token:", access_token)
+    # print("Refresh Token:", refresh_token)
+    access_token = refresh_access_token('IKVVV0yvuiTp4_S50AbIfm-WEZ4STPm0Msf__T35VuM')['access_token']
+    print(get_chart_of_accounts(access_token=access_token, tenant_id='c0395c8a-b2e1-4c3c-b697-7e4094d9ad9b'))
+    get_matched_transactions(access_token=access_token, tenant_id='c0395c8a-b2e1-4c3c-b697-7e4094d9ad9b')
