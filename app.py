@@ -7,6 +7,7 @@ import hashlib
 from functools import wraps
 from io import BytesIO
 from logging.config import dictConfig
+import re
 
 from flask import Flask, url_for, render_template, session, redirect, json, send_file
 from flask_oauthlib.contrib.client import OAuth, OAuth2Application
@@ -36,9 +37,6 @@ AUTHORIZATION_URL = 'https://login.xero.com/identity/connect/authorize'
 TOKEN_URL = 'https://identity.xero.com/connect/token'
 BASE_URL = 'https://api.xero.com/api.xro/2.0/'
 
-TODO: "I can pull charts of accounts from each client which will serve as the category list when I make their google sheet. Transaction Type column in Sheet will be the bankTransaction description. Need to figure out how to store pending transactions so when customer clarifies category I can update proper bank transaction. Maybe store bank transactionId in the sheet?"
-
-
 
 def accounting_get_bank_transactions(access_token, tenant_id):
     url = BASE_URL + 'BankTransactions'
@@ -48,16 +46,22 @@ def accounting_get_bank_transactions(access_token, tenant_id):
         'Xero-tenant-id': tenant_id
     }
     params = {
-        'if-modified-since': '2024-02-06T12:17:43.202-08:00',
+        'if-modified-since': '2024-01-01T12:17:43.202-08:00',
     }
     response = requests.get(url, headers=headers, params=params)
     if response.status_code == 200:
-        return response.json()
+        response_data = response.json()
+        
+        # Write the response to a file
+        with open('response.json', 'w') as file:
+            json.dump(response_data, file, indent=4)
+        
+        print("Response written to response.json")
+        return response_data
     else:
         print(f"Error: {response.status_code} - {response.text}")
         return None
 
-# Function to get journals
 def accounting_get_journals(access_token, tenant_id):
     url = BASE_URL + 'Journals'
     headers = {
@@ -66,17 +70,19 @@ def accounting_get_journals(access_token, tenant_id):
         'Xero-tenant-id': tenant_id
     }
     params = {
-        'if-modified-since': '2024-02-06T12:17:43.202-08:00'
+        'if-modified-since': '2024-01-01T12:17:43.202-08:00'
     }
     response = requests.get(url, headers=headers, params=params)
     if response.status_code == 200:
         journals = response.json()
+        with open('journals.json', 'w') as file:
+            json.dump(journals, file, indent=4)
         uncategorized_journals = []
 
         # Assuming 'journals' is a list of journal entries structured as in the provided data excerpt
         for journal in journals.get('Journals', []):
             # Check if any journal line in the current journal has 'account_name' == 'Uncategorized Expense'
-            if any(line['AccountName'] == 'Uncategorized Expense' for line in journal['JournalLines']):
+            if any(line['AccountName'] == 'Uncategorized Expense' or line['AccountName'] == 'Uncategorized Income' for line in journal['JournalLines']):
                 uncategorized_journals.append(journal)
         
         # Return the list of uncategorized journals
@@ -109,32 +115,31 @@ def match_transactions(bank_transactions, journals):
     for journal in journals:
         journal_date = journal['JournalDate']
         for journal_line in journal['JournalLines']:
-            if journal_line['AccountName'] == 'Uncategorized Expense':  # Identify uncategorized expenses
-                gross_amount = abs(Decimal(journal_line['GrossAmount']))
-                description = journal_line['Description']
-                
-                for transaction in bank_transactions:
-                    # print(transaction)
-                    transaction_date = transaction['Date']
-                    # print(journal_date)
-                    # print(transaction_date)
-                    # if (journal_date == transaction_date):
-                    #     print("Match")
-                    # print(Decimal(transaction['Total']))
-                    # print(gross_amount)
-                    # print('\n')
-                    if (
-                        Decimal(transaction['Total']) == gross_amount and
-                        transaction_date == journal_date
-                    ):
-                        matches.append({
-                            'date': journal['JournalDate'],
-                            'description': description,
-                            'gross_amount': str(gross_amount),
-                            'bank_transaction_id': transaction['BankTransactionID'],
-                            'contact_id': transaction['Contact']['ContactID'],
-                            'account_id': transaction['BankAccount']['AccountID']
-                        })
+            gross_amount = abs(Decimal(journal_line['GrossAmount']))
+            description = journal_line['Description']
+            
+            for transaction in bank_transactions:
+                # print(transaction)
+                transaction_date = transaction['Date']
+                # print(convert_unix_time(transaction_date))
+                # print(convert_unix_time(journal_date))
+                # if (journal_date == transaction_date):
+                #     print("Match")
+                # print(Decimal(transaction['Total']))
+                # print(gross_amount)
+                # print('\n')
+                if (
+                    Decimal(transaction['Total']) == gross_amount and
+                    transaction_date == journal_date
+                ):
+                    matches.append({
+                        'date': convert_unix_time(transaction['Date']),
+                        'description': description,
+                        'gross_amount': str(gross_amount),
+                        'bank_transaction_id': transaction['BankTransactionID'],
+                        'contact_id': transaction['Contact']['ContactID'],
+                        'account_id': transaction['BankAccount']['AccountID']
+                    })
     print(matches)                    
     return matches
 
@@ -167,10 +172,65 @@ def accounting_update_bank_transaction(tenant_id, bank_transaction_id, contact_i
         bank_transactions = [bank_transaction])
     
     try:
-        api_instance.update_bank_transaction(xero_tenant_id, bank_transaction_id, bankTransactions)
+        update_bank_transaction(xero_tenant_id, bank_transaction_id, bankTransactions)
     except AccountingBadRequestException as e:
         print("Exception when calling AccountingApi->updateBankTransaction: %s\n" % e)
 
+def accounting_create_bank_transactions(access_token, tenant_id):
+    url = 'https://api.xero.com/api.xro/2.0/BankTransactions'
+    headers = {
+        'Authorization': f'Bearer {access_token}',
+        'Xero-tenant-id': tenant_id,
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    }
+
+    # Define the contact
+    contact = {
+        "name": "test"
+    }
+
+    # Define the line item
+    line_item = {
+        "description": "test",
+        "quantity": 1.0,
+        "unit_amount": 20.0,
+        "account_code": "000",
+        "line_amount": 20.0
+    }
+    
+    # Define the bank account
+    bank_account = {
+        "account_id": "69c850b6-7d21-4ee3-a598-7d5c365dba24"
+    }
+
+    # Create the bank transaction
+    bank_transaction = {
+    "Type": "SPEND",
+    "Contact": {
+        "name": "Test"
+    },
+    "LineItems": [{
+        "Description": "Test",
+        "UnitAmount": "20.00",
+        "AccountCode": "8888",
+        "TaxType": "NONE",
+    }],
+    "BankAccount": {
+        "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24"
+    }
+}
+    
+    # Send the POST request
+    response = requests.post(url, headers=headers, json=bank_transaction)
+
+    # Check the response
+    if response.status_code in [200, 201]:
+        return response.json()
+    else:
+        print(f"Error: {response.status_code} - {response.text}")
+        return None
+    
 def generate_code_verifier():
     verifier = base64.urlsafe_b64encode(os.urandom(32)).decode('utf-8').rstrip('=')
     return verifier
@@ -184,7 +244,7 @@ def get_authorization_url(verifier, challenge):
         'response_type': 'code',
         'client_id': CLIENT_ID,
         'redirect_uri': REDIRECT_URI,
-        'scope': 'openid profile email accounting.transactions accounting.attachments',
+        'scope': 'openid profile email accounting.transactions accounting.attachments accounting.settings accounting.contacts',
         'code_challenge': challenge,
         'code_challenge_method': 'S256',
     }
@@ -260,6 +320,13 @@ def get_chart_of_accounts(access_token, tenant_id):
         print(f"Error: {response.status_code} - {response.text}")
         return None
 
+def convert_unix_time(date_str):
+    match = re.search(r'/Date\((\d+)\+\d+\)/', date_str)
+    if match:
+        timestamp = int(match.group(1)) / 1000  # Convert milliseconds to seconds
+        date_time = datetime.utcfromtimestamp(timestamp)  # Convert to datetime object
+        return date_time.strftime('%Y-%m-%d %H:%M:%S')  # Format to readable string
+    return date_str
 if __name__ == '__main__':
     # code_verifier = generate_code_verifier()
     # code_challenge = generate_code_challenge(code_verifier)
@@ -280,6 +347,7 @@ if __name__ == '__main__':
     
     # print("Access Token:", access_token)
     # print("Refresh Token:", refresh_token)
-    access_token = refresh_access_token('IKVVV0yvuiTp4_S50AbIfm-WEZ4STPm0Msf__T35VuM')['access_token']
-    print(get_chart_of_accounts(access_token=access_token, tenant_id='c0395c8a-b2e1-4c3c-b697-7e4094d9ad9b'))
-    get_matched_transactions(access_token=access_token, tenant_id='c0395c8a-b2e1-4c3c-b697-7e4094d9ad9b')
+    access_token = refresh_access_token('Ju5rbIqGJiRYGl7md3IE2e28Dml07rEJsZBstSVRaeU')['access_token']
+    accounting_create_bank_transactions(access_token=access_token, tenant_id='c0395c8a-b2e1-4c3c-b697-7e4094d9ad9b')
+    # print(get_chart_of_accounts(access_token=access_token, tenant_id='c0395c8a-b2e1-4c3c-b697-7e4094d9ad9b'))
+    # get_matched_transactions(access_token=access_token, tenant_id='c0395c8a-b2e1-4c3c-b697-7e4094d9ad9b')

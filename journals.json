@@ -1,0 +1,3848 @@
+{
+    "Id": "c0f6cff8-5971-40d6-a210-23d977595e0c",
+    "Status": "OK",
+    "ProviderName": "Good Ag Test App",
+    "DateTimeUTC": "/Date(1722277869446)/",
+    "Journals": [
+        {
+            "JournalID": "88644554-6c53-461b-8fd1-d725420581f0",
+            "JournalDate": "/Date(1690848000000+0000)/",
+            "JournalNumber": 1,
+            "CreatedDateUTC": "/Date(1691762675757+0000)/",
+            "SourceID": "2f4bcb10-837d-47a0-a836-7702b0798530",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "0ac570a6-8ef6-4537-81c1-1c7c898ee9a3",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -123.0,
+                    "GrossAmount": -123.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "3bc1b1df-b013-4df4-bef0-46ebd8b177ba",
+                    "AccountID": "50a5d51e-cf18-4959-ba97-de8cd9d696b9",
+                    "AccountCode": "644",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Utilities",
+                    "Description": "",
+                    "NetAmount": 123.0,
+                    "GrossAmount": 123.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "c934bd4c-c992-44c8-bc8d-2bde8236b15f",
+            "JournalDate": "/Date(1691452800000+0000)/",
+            "JournalNumber": 2,
+            "CreatedDateUTC": "/Date(1691762715090+0000)/",
+            "SourceID": "29dc5abd-2451-4def-9df1-d27b322dcdc9",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "0d35714b-8682-4b99-88c3-d0bf771599b0",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -265.0,
+                    "GrossAmount": -265.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "60f94216-3983-41d9-9382-baa9643722b5",
+                    "AccountID": "d2858320-5dea-4f29-b25c-1fda0dc8f05f",
+                    "AccountCode": "612",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Consulting and Accounting",
+                    "Description": "",
+                    "NetAmount": 265.0,
+                    "GrossAmount": 265.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "ca3691cd-9ecb-4539-be26-9eef07df2d1e",
+            "JournalDate": "/Date(1675209600000+0000)/",
+            "JournalNumber": 3,
+            "CreatedDateUTC": "/Date(1692726040453+0000)/",
+            "SourceID": "4b1099f8-2be3-4e9f-80ce-c57368c3dddd",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "93361e85-e502-4bff-a571-28f0a42e127a",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -62.0,
+                    "GrossAmount": -62.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "74cff4a2-b3bd-4077-a3ca-72b476e654d3",
+                    "AccountID": "50a5d51e-cf18-4959-ba97-de8cd9d696b9",
+                    "AccountCode": "644",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Utilities",
+                    "Description": "",
+                    "NetAmount": 62.0,
+                    "GrossAmount": 62.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "cda6f131-4b80-4956-b4c4-42aaa4d50411",
+            "JournalDate": "/Date(1677715200000+0000)/",
+            "JournalNumber": 4,
+            "CreatedDateUTC": "/Date(1692726042657+0000)/",
+            "SourceID": "0dfae050-e497-468e-892b-5fda6a663d4e",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "aa90de22-24b5-48ea-b8b8-6986bb516d28",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -59.0,
+                    "GrossAmount": -59.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "3f042193-9f13-486f-b3f5-e122f463df5d",
+                    "AccountID": "50a5d51e-cf18-4959-ba97-de8cd9d696b9",
+                    "AccountCode": "644",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Utilities",
+                    "Description": "",
+                    "NetAmount": 59.0,
+                    "GrossAmount": 59.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "25da30ee-00ba-409a-84d8-9c19e4a40b5b",
+            "JournalDate": "/Date(1680220800000+0000)/",
+            "JournalNumber": 5,
+            "CreatedDateUTC": "/Date(1692726043697+0000)/",
+            "SourceID": "02fa7000-9ea5-4b1d-beab-88aaf3810d40",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "5eb3c714-00d2-499d-a267-94b480e48d18",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -56.0,
+                    "GrossAmount": -56.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "ad11f68b-397a-4160-aa90-4b1a3847c42c",
+                    "AccountID": "50a5d51e-cf18-4959-ba97-de8cd9d696b9",
+                    "AccountCode": "644",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Utilities",
+                    "Description": "",
+                    "NetAmount": 56.0,
+                    "GrossAmount": 56.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "ac48834b-79db-4e89-bf5b-abfe307c1a8e",
+            "JournalDate": "/Date(1682985600000+0000)/",
+            "JournalNumber": 6,
+            "CreatedDateUTC": "/Date(1692726044663+0000)/",
+            "SourceID": "0cb9afea-5c00-4cb8-83cf-4092c4e566bc",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "6fea380c-1652-4679-9900-e1c537893a0f",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -59.0,
+                    "GrossAmount": -59.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "139b8b44-71e5-49e6-befc-54fe272426ca",
+                    "AccountID": "50a5d51e-cf18-4959-ba97-de8cd9d696b9",
+                    "AccountCode": "644",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Utilities",
+                    "Description": "",
+                    "NetAmount": 59.0,
+                    "GrossAmount": 59.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "74992a85-f5fb-4e53-a7f9-9ddaa99d557c",
+            "JournalDate": "/Date(1685491200000+0000)/",
+            "JournalNumber": 7,
+            "CreatedDateUTC": "/Date(1692726045963+0000)/",
+            "SourceID": "0b95347d-4bac-4d9d-81cf-98f965be6a7f",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "4a4e84e6-d3f7-43c7-b019-03be94dabc18",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -103.0,
+                    "GrossAmount": -103.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "395fff91-0ce4-4b95-b19b-1e1201cfa7fc",
+                    "AccountID": "50a5d51e-cf18-4959-ba97-de8cd9d696b9",
+                    "AccountCode": "644",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Utilities",
+                    "Description": "",
+                    "NetAmount": 103.0,
+                    "GrossAmount": 103.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "12f1b64f-8ef0-47a3-87d1-ecfa5f9b45b4",
+            "JournalDate": "/Date(1687996800000+0000)/",
+            "JournalNumber": 8,
+            "CreatedDateUTC": "/Date(1692726047227+0000)/",
+            "SourceID": "c3e9690f-0c1a-463c-a36e-ed3dd9650e2a",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "708f1d7c-8db0-406d-b25f-1dedbc33aaca",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -122.0,
+                    "GrossAmount": -122.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "f1e391e5-14b9-4eeb-98ee-47490607e522",
+                    "AccountID": "50a5d51e-cf18-4959-ba97-de8cd9d696b9",
+                    "AccountCode": "644",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Utilities",
+                    "Description": "",
+                    "NetAmount": 122.0,
+                    "GrossAmount": 122.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "5281f915-d4d5-4456-990c-9fd9f7d604c0",
+            "JournalDate": "/Date(1690848000000+0000)/",
+            "JournalNumber": 9,
+            "CreatedDateUTC": "/Date(1692726049180+0000)/",
+            "SourceID": "161fbec0-8905-4145-b590-6911c021b0e6",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "8d772d79-058c-4862-adfe-e50938412a45",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -123.0,
+                    "GrossAmount": -123.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "5ae70ab6-ae60-454e-9769-d78068a2a1ed",
+                    "AccountID": "50a5d51e-cf18-4959-ba97-de8cd9d696b9",
+                    "AccountCode": "644",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Utilities",
+                    "Description": "",
+                    "NetAmount": 123.0,
+                    "GrossAmount": 123.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "61dba0f3-10c4-4638-bf19-f279c27df83d",
+            "JournalDate": "/Date(1690156800000+0000)/",
+            "JournalNumber": 10,
+            "CreatedDateUTC": "/Date(1692727923187+0000)/",
+            "SourceID": "292fd5b0-91b8-4c04-a30b-e0c1612e0d08",
+            "SourceType": "CASHREC",
+            "JournalLines": [
+                {
+                    "JournalLineID": "1ec41d52-01f4-41ca-a010-451ccd5b0515",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 39627.34,
+                    "GrossAmount": 39627.34,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "20f77d84-2013-427a-8ab3-2f4b9974a4b7",
+                    "AccountID": "ca110a56-4213-4d48-ad1b-473b4049d262",
+                    "AccountCode": "400",
+                    "AccountType": "REVENUE",
+                    "AccountName": "Sales",
+                    "Description": "32 Calves Sold",
+                    "NetAmount": -39627.34,
+                    "GrossAmount": -39627.34,
+                    "TaxAmount": 0.0,
+                    "TaxType": "OUTPUT",
+                    "TaxName": "Tax on Sales",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "38908c5f-bab5-4a26-81a3-f76ba2ef8764",
+            "JournalDate": "/Date(1691452800000+0000)/",
+            "JournalNumber": 11,
+            "CreatedDateUTC": "/Date(1692727931950+0000)/",
+            "SourceID": "3d62b5c8-7db1-4aae-9bf8-920f4662eea9",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "06d59357-bd9e-4ece-82fc-714d96899510",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -265.0,
+                    "GrossAmount": -265.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "82833e58-7564-4f68-a564-f317355a03b0",
+                    "AccountID": "d2858320-5dea-4f29-b25c-1fda0dc8f05f",
+                    "AccountCode": "612",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Consulting and Accounting",
+                    "Description": "",
+                    "NetAmount": 265.0,
+                    "GrossAmount": 265.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "a44950c0-e1ef-44e9-ad91-fa1379b226af",
+            "JournalDate": "/Date(1692576000000+0000)/",
+            "JournalNumber": 12,
+            "CreatedDateUTC": "/Date(1692729584880+0000)/",
+            "Reference": "WF Bus Credit    AUTO PAY   230821 90225246898970  DAVIS,JOSHUA                                    ",
+            "SourceID": "d3fc53ea-769a-4cee-a76a-841153a396e6",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "8b31da61-0cb8-478c-8105-458ecc48aa53",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 903.63,
+                    "GrossAmount": 903.63,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "3f586430-31ca-4b89-905a-92d471e58c10",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -903.63,
+                    "GrossAmount": -903.63,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "ef85ba87-293f-4eef-93b9-2bce6f39e218",
+            "JournalDate": "/Date(1692576000000+0000)/",
+            "JournalNumber": 13,
+            "CreatedDateUTC": "/Date(1692729588103+0000)/",
+            "Reference": "AUTOMATIC PAYMENT - THANK YOU",
+            "SourceID": "0042e79f-fa88-4673-861a-d608c0dead59",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "5b63c2e3-6a7c-429f-86b5-27e07ec4667d",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 903.63,
+                    "GrossAmount": 903.63,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "5b8cc6a3-a381-4188-bd6e-13e64af4ab17",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -903.63,
+                    "GrossAmount": -903.63,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "a0f365ee-fd7f-4683-8060-c79879e654b4",
+            "JournalDate": "/Date(1692576000000+0000)/",
+            "JournalNumber": 14,
+            "CreatedDateUTC": "/Date(1692729666227+0000)/",
+            "Reference": "WF Bus Credit    AUTO PAY   230821 90225246898970  DAVIS,JOSHUA                                    ",
+            "SourceID": "d3fc53ea-769a-4cee-a76a-841153a396e6",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "b6c95d61-6551-454b-af1d-60cf14e353b9",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -903.63,
+                    "GrossAmount": -903.63,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "5cc7dee9-5619-456c-9f09-b1666bec6b51",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 903.63,
+                    "GrossAmount": 903.63,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "f941c970-0c3e-4ab3-be93-0481f94820e8",
+            "JournalDate": "/Date(1688083200000+0000)/",
+            "JournalNumber": 15,
+            "CreatedDateUTC": "//Date(1692729894220+0000)//",
+            "JournalLines": [
+                {
+                    "JournalLineID": "0d3bad38-95e3-4272-9675-fa3c780f16c7",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 1753.57,
+                    "GrossAmount": 1753.57,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "37c9d0cc-af72-4f2b-8313-7fe4b37c7ede",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 461.0,
+                    "GrossAmount": 461.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "14414070-1b2f-483f-bfff-d46b588a83f5",
+                    "AccountID": "50a5d51e-cf18-4959-ba97-de8cd9d696b9",
+                    "AccountCode": "644",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Utilities",
+                    "Description": "",
+                    "NetAmount": -461.0,
+                    "GrossAmount": -461.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "3b2416cc-8412-43de-966e-4ed379cac104",
+                    "AccountID": "40f5c2c5-ae3d-4a72-99ca-cbc575c0423a",
+                    "AccountCode": "255",
+                    "AccountType": "CURRLIAB",
+                    "AccountName": "Historical Adjustment",
+                    "Description": "",
+                    "NetAmount": -1753.57,
+                    "GrossAmount": -1753.57,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "c77562f4-327c-4438-adaa-011f1a44bb09",
+            "JournalDate": "/Date(1674172800000+0000)/",
+            "JournalNumber": 16,
+            "CreatedDateUTC": "/Date(1692730534923+0000)/",
+            "Reference": "",
+            "SourceID": "3f41c7ad-6ea8-407b-8a03-a7ffe482e7e0",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "7664e8f0-d7dd-4bb5-95d0-23280fd22faf",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 1753.57,
+                    "GrossAmount": 1753.57,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "d1ea6f00-70ee-4be5-856a-abad42a70742",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -1753.57,
+                    "GrossAmount": -1753.57,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "03365a18-9f7f-4159-9bc3-78c0ccc6d371",
+            "JournalDate": "/Date(1677024000000+0000)/",
+            "JournalNumber": 17,
+            "CreatedDateUTC": "/Date(1692730613597+0000)/",
+            "Reference": "",
+            "SourceID": "205f5308-2612-4de6-bee4-36ec0538dca5",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "7505a0eb-6522-40f0-9be0-f3566036262b",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 124.0,
+                    "GrossAmount": 124.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "e4b65361-a2c8-486d-8b3d-608a31631b9d",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -124.0,
+                    "GrossAmount": -124.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "93bd8541-7775-4426-ab68-61ed23f2cc29",
+            "JournalDate": "/Date(1682035200000+0000)/",
+            "JournalNumber": 18,
+            "CreatedDateUTC": "/Date(1692730614607+0000)/",
+            "Reference": "",
+            "SourceID": "6436827e-d3a7-4026-80ce-566b95833bd3",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "bd2d160a-7348-4d62-bb1c-4e028ab93f8d",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 31.69,
+                    "GrossAmount": 31.69,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "6e768045-2867-46d2-a489-8d7d8d063bf1",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -31.69,
+                    "GrossAmount": -31.69,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "83e8abaf-a7f4-4960-bfd6-0e8428324c43",
+            "JournalDate": "/Date(1684713600000+0000)/",
+            "JournalNumber": 19,
+            "CreatedDateUTC": "/Date(1692730615317+0000)/",
+            "Reference": "",
+            "SourceID": "c76dd42a-fb4d-4bb1-821f-1faf1fc196ee",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "520691e0-697b-4939-b0e0-494a41880bfd",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "1dd05bfc-9b61-4718-bd1e-1189317012b1",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "5a355345-3272-4e07-9080-842a0e6c6153",
+            "JournalDate": "/Date(1687305600000+0000)/",
+            "JournalNumber": 20,
+            "CreatedDateUTC": "/Date(1692730615953+0000)/",
+            "Reference": "",
+            "SourceID": "c40ec259-a30a-412b-93c4-9da154f63bf2",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "00f39e2c-e3fb-462a-9700-062f8945264f",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "ad2ede3d-8eb0-4e07-a0fd-5b61ab930584",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "2f93e263-29c8-4f08-bff8-f09ac41b9867",
+            "JournalDate": "/Date(1690156800000+0000)/",
+            "JournalNumber": 21,
+            "CreatedDateUTC": "/Date(1692730616650+0000)/",
+            "Reference": "",
+            "SourceID": "3d1a2166-ee7b-4fab-97e2-cb6e30f535a8",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "e661f0f0-2fe6-47e1-bea3-df2e071e3584",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "5a5890c2-bcd5-46d7-be83-4e82dce629bd",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "a67e7453-0c1a-4db2-ac5d-835aa4164cd2",
+            "JournalDate": "/Date(1680652800000+0000)/",
+            "JournalNumber": 22,
+            "CreatedDateUTC": "/Date(1692730657697+0000)/",
+            "SourceID": "f725b3c7-fd8c-493d-b0f9-3e0ec66c707f",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "760a01e9-cc37-4259-ad2c-cb5860e53f1e",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "7fc84428-b5a3-4c05-8d71-63caf963e844",
+                    "AccountID": "0f055744-a99e-415f-827e-ab1b3f82e3fb",
+                    "AccountCode": "676",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Dues and subscriptions",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "290f0a8f-6782-4214-904a-26a5254bc554",
+            "JournalDate": "/Date(1683244800000+0000)/",
+            "JournalNumber": 23,
+            "CreatedDateUTC": "/Date(1692730659510+0000)/",
+            "SourceID": "64dcaa8b-0615-4bd8-ae80-eb95b233c7cd",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "8a450107-d8ac-40da-acd7-ce53da2b3da3",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "0770bca0-f4a5-42c3-9b94-46799cd1cdd2",
+                    "AccountID": "0f055744-a99e-415f-827e-ab1b3f82e3fb",
+                    "AccountCode": "676",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Dues and subscriptions",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "c13a08ef-f35d-4e70-9d2f-8156d5e9d836",
+            "JournalDate": "/Date(1685923200000+0000)/",
+            "JournalNumber": 24,
+            "CreatedDateUTC": "/Date(1692730660183+0000)/",
+            "SourceID": "3929b158-e08b-4fc4-bc95-418e94e25b50",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "bbaaa833-24b0-4652-b1e8-31822c40305a",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "3acd3685-bc03-47d5-8a7b-5fa7faca3d05",
+                    "AccountID": "0f055744-a99e-415f-827e-ab1b3f82e3fb",
+                    "AccountCode": "676",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Dues and subscriptions",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "b06d53ca-0d5b-42f7-9eef-b985bc3b6c8c",
+            "JournalDate": "/Date(1688083200000+0000)/",
+            "JournalNumber": 25,
+            "CreatedDateUTC": "/Date(1692730682127+0000)/",
+            "JournalLines": [
+                {
+                    "JournalLineID": "882a5a41-e780-4cc2-a5da-791a788b85f6",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -1753.57,
+                    "GrossAmount": -1753.57,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "8b47feca-f620-4cd0-bfa1-8d3010f713f5",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -461.0,
+                    "GrossAmount": -461.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "6127bfde-056b-4da2-8700-eace0741bbcd",
+                    "AccountID": "50a5d51e-cf18-4959-ba97-de8cd9d696b9",
+                    "AccountCode": "644",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Utilities",
+                    "Description": "",
+                    "NetAmount": 461.0,
+                    "GrossAmount": 461.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "f1ff2aa2-7121-4980-83be-59193c93a83c",
+                    "AccountID": "40f5c2c5-ae3d-4a72-99ca-cbc575c0423a",
+                    "AccountCode": "255",
+                    "AccountType": "CURRLIAB",
+                    "AccountName": "Historical Adjustment",
+                    "Description": "",
+                    "NetAmount": 1753.57,
+                    "GrossAmount": 1753.57,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "1fbd80c8-8c10-42e9-9cb8-30215f632067",
+            "JournalDate": "/Date(1688083200000+0000)/",
+            "JournalNumber": 26,
+            "CreatedDateUTC": "/Date(1692730682140+0000)/",
+            "JournalLines": [
+                {
+                    "JournalLineID": "59f9fbf0-cfee-4ae7-860c-5efe63c1daea",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -1894.26,
+                    "GrossAmount": -1894.26,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "1b25f935-0556-40e5-b0b3-b59f19bacc2d",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 2400.26,
+                    "GrossAmount": 2400.26,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "eb49381e-5d02-4292-8a27-607f6b63a751",
+                    "AccountID": "50a5d51e-cf18-4959-ba97-de8cd9d696b9",
+                    "AccountCode": "644",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Utilities",
+                    "Description": "",
+                    "NetAmount": -461.0,
+                    "GrossAmount": -461.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "1d117f23-1cab-44d9-9726-fa45562744d0",
+                    "AccountID": "0f055744-a99e-415f-827e-ab1b3f82e3fb",
+                    "AccountCode": "676",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Dues and subscriptions",
+                    "Description": "",
+                    "NetAmount": -45.0,
+                    "GrossAmount": -45.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "006ccc80-62d9-47cd-ac42-f6e00fcd1085",
+            "JournalDate": "/Date(1680652800000+0000)/",
+            "JournalNumber": 27,
+            "CreatedDateUTC": "/Date(1692730909760+0000)/",
+            "SourceID": "f725b3c7-fd8c-493d-b0f9-3e0ec66c707f",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "9308e618-acbc-4cd5-b6e4-609109a5f9ee",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "a649eaaf-8ab2-49ff-b6cc-150b41067c78",
+                    "AccountID": "0f055744-a99e-415f-827e-ab1b3f82e3fb",
+                    "AccountCode": "676",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Dues and subscriptions",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "93f01971-6046-400d-a5eb-7a78cf44fe77",
+            "JournalDate": "/Date(1680652800000+0000)/",
+            "JournalNumber": 28,
+            "CreatedDateUTC": "/Date(1692730909743+0000)/",
+            "SourceID": "f725b3c7-fd8c-493d-b0f9-3e0ec66c707f",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "8acee9c0-c0eb-4bc5-96dc-d27f30825b6a",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "cc34fb9d-8c35-461d-a199-d123843bfb42",
+                    "AccountID": "300858dc-fe81-4c61-b7bc-5bdbef41536a",
+                    "AccountCode": "6442",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Software and website",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "c5c219cb-08ce-4bc5-ab5b-5edc0fff716f",
+            "JournalDate": "/Date(1685923200000+0000)/",
+            "JournalNumber": 29,
+            "CreatedDateUTC": "/Date(1692730909857+0000)/",
+            "SourceID": "3929b158-e08b-4fc4-bc95-418e94e25b50",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "7430280e-4664-47c8-8d30-fe451962a407",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "ad4766b1-e066-4a56-ac53-13e12cf80367",
+                    "AccountID": "0f055744-a99e-415f-827e-ab1b3f82e3fb",
+                    "AccountCode": "676",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Dues and subscriptions",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "5b86e42e-50bf-4953-8bf2-d148b6b4f5d3",
+            "JournalDate": "/Date(1685923200000+0000)/",
+            "JournalNumber": 30,
+            "CreatedDateUTC": "/Date(1692730909840+0000)/",
+            "SourceID": "3929b158-e08b-4fc4-bc95-418e94e25b50",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "4c6ae59b-a62f-40ee-bb3b-d2d6bb203dfe",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "56f5ff04-7645-44a8-9ade-3a039f8e9bbd",
+                    "AccountID": "300858dc-fe81-4c61-b7bc-5bdbef41536a",
+                    "AccountCode": "6442",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Software and website",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "b2971ed0-9bd7-40da-b25d-f957d76e4507",
+            "JournalDate": "/Date(1683244800000+0000)/",
+            "JournalNumber": 31,
+            "CreatedDateUTC": "/Date(1692730909930+0000)/",
+            "SourceID": "64dcaa8b-0615-4bd8-ae80-eb95b233c7cd",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "87e7f4ce-313f-44b2-a2cb-c29b8cf2d739",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "c5782d4e-4e16-4aad-a8c2-771fee6054f8",
+                    "AccountID": "0f055744-a99e-415f-827e-ab1b3f82e3fb",
+                    "AccountCode": "676",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Dues and subscriptions",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "7db5fe73-55f5-4779-b66a-470b97ad4aba",
+            "JournalDate": "/Date(1683244800000+0000)/",
+            "JournalNumber": 32,
+            "CreatedDateUTC": "/Date(1692730909913+0000)/",
+            "SourceID": "64dcaa8b-0615-4bd8-ae80-eb95b233c7cd",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "e1a4311c-31c6-4dae-8412-4a25835f8083",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "63897194-c1e3-42df-9927-fee3384b2311",
+                    "AccountID": "300858dc-fe81-4c61-b7bc-5bdbef41536a",
+                    "AccountCode": "6442",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Software and website",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "773855ea-3c4c-4d6a-b9c9-dd829940f467",
+            "JournalDate": "/Date(1674518400000+0000)/",
+            "JournalNumber": 33,
+            "CreatedDateUTC": "/Date(1692731013873+0000)/",
+            "SourceID": "17ee339b-79b7-4268-a991-a1f3895e3a25",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "d2925a8a-18f8-4ef0-a3c4-713f149d4c20",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -40.0,
+                    "GrossAmount": -40.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "0f8eb10f-8e2f-4e22-baf0-b0edaba65f58",
+                    "AccountID": "cb9a4b84-82ad-42a7-9dea-6acebd482a98",
+                    "AccountCode": "9999",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Uncategorized Expense",
+                    "Description": "Check 1099",
+                    "NetAmount": 40.0,
+                    "GrossAmount": 40.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "756f8549-57bf-4005-a575-a3596dd2fcf2",
+            "JournalDate": "/Date(1691366400000+0000)/",
+            "JournalNumber": 34,
+            "CreatedDateUTC": "/Date(1692731014000+0000)/",
+            "Reference": "",
+            "SourceID": "7daea2f5-a146-4271-b1b2-140a771af5b6",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "8053c856-379f-4daa-b6f9-2afb6f8f0c93",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -2500.0,
+                    "GrossAmount": -2500.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "2a63d8e5-584d-4d8d-ad19-21e29247d32f",
+                    "AccountID": "cb9a4b84-82ad-42a7-9dea-6acebd482a98",
+                    "AccountCode": "9999",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Uncategorized Expense",
+                    "Description": "202308071",
+                    "NetAmount": 2500.0,
+                    "GrossAmount": 2500.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "c52ce4ee-74d9-40f4-83d7-6216ed944305",
+            "JournalDate": "/Date(1691366400000+0000)/",
+            "JournalNumber": 35,
+            "CreatedDateUTC": "/Date(1692731014107+0000)/",
+            "SourceID": "22ce57da-541b-4f96-8de1-818faf2c1651",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "e84b4e76-2347-41b2-87c5-040ddf9ac5f3",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -2500.0,
+                    "GrossAmount": -2500.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "e08456bd-2651-424f-a1e0-6e210949eea9",
+                    "AccountID": "cb9a4b84-82ad-42a7-9dea-6acebd482a98",
+                    "AccountCode": "9999",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Uncategorized Expense",
+                    "Description": "Check 1117",
+                    "NetAmount": 2500.0,
+                    "GrossAmount": 2500.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "eedfd967-4376-4563-822e-d44d805ca419",
+            "JournalDate": "/Date(1692057600000+0000)/",
+            "JournalNumber": 36,
+            "CreatedDateUTC": "/Date(1692731014203+0000)/",
+            "Reference": "",
+            "SourceID": "8cd9e669-6d11-4060-80b5-10ce7e1e6f05",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "7c7f7bee-564f-407a-9f44-ef27654f879e",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -6000.0,
+                    "GrossAmount": -6000.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "93895641-ce6e-42c1-a278-f15c6fe94f9c",
+                    "AccountID": "cb9a4b84-82ad-42a7-9dea-6acebd482a98",
+                    "AccountCode": "9999",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Uncategorized Expense",
+                    "Description": "202308151",
+                    "NetAmount": 6000.0,
+                    "GrossAmount": 6000.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "95522651-cb14-4f16-836a-b0ef3388e1d2",
+            "JournalDate": "/Date(1692057600000+0000)/",
+            "JournalNumber": 37,
+            "CreatedDateUTC": "/Date(1692731014317+0000)/",
+            "SourceID": "42ee5734-decd-44a6-a868-f91db80e1b29",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "3d9d215d-f8d4-4fcd-9909-50d08afc674d",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -6000.0,
+                    "GrossAmount": -6000.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "96986713-6a92-456f-bfab-8fa8189e2c3d",
+                    "AccountID": "cb9a4b84-82ad-42a7-9dea-6acebd482a98",
+                    "AccountCode": "9999",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Uncategorized Expense",
+                    "Description": "Check 1109",
+                    "NetAmount": 6000.0,
+                    "GrossAmount": 6000.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "44934b29-0233-4292-8220-e9437d4d1b32",
+            "JournalDate": "/Date(1692316800000+0000)/",
+            "JournalNumber": 38,
+            "CreatedDateUTC": "/Date(1692731014437+0000)/",
+            "Reference": "",
+            "SourceID": "d0b68543-2a85-4ab9-9a52-09d625b33896",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "f7cfbbb9-f730-4f9a-80dc-9f20433a4066",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -1684.71,
+                    "GrossAmount": -1684.71,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "0942bc0f-f4c3-4ced-9380-63e5e55f0d62",
+                    "AccountID": "cb9a4b84-82ad-42a7-9dea-6acebd482a98",
+                    "AccountCode": "9999",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Uncategorized Expense",
+                    "Description": "202308182",
+                    "NetAmount": 1684.71,
+                    "GrossAmount": 1684.71,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "96245b5e-0bf3-468a-9066-f5fa14647f13",
+            "JournalDate": "/Date(1692316800000+0000)/",
+            "JournalNumber": 39,
+            "CreatedDateUTC": "/Date(1692731014550+0000)/",
+            "Reference": "",
+            "SourceID": "10509037-1859-4d34-9112-c6d53b94dbc5",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "821c5c49-ebbf-406a-b8b0-52ed925460e5",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -773.0,
+                    "GrossAmount": -773.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "a19aee01-28c7-401d-ac0c-5ae36376687d",
+                    "AccountID": "cb9a4b84-82ad-42a7-9dea-6acebd482a98",
+                    "AccountCode": "9999",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Uncategorized Expense",
+                    "Description": "202308181",
+                    "NetAmount": 773.0,
+                    "GrossAmount": 773.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "53284b52-946c-48be-93da-946441b5c9a0",
+            "JournalDate": "/Date(1692316800000+0000)/",
+            "JournalNumber": 40,
+            "CreatedDateUTC": "/Date(1692731014643+0000)/",
+            "SourceID": "2776c0a7-2188-47e8-8b89-368685c4fa00",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "6496b90b-f2d8-49c6-a333-be34f36c4561",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -1684.71,
+                    "GrossAmount": -1684.71,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "999c97f0-a098-460f-89be-44a920ebcf3a",
+                    "AccountID": "cb9a4b84-82ad-42a7-9dea-6acebd482a98",
+                    "AccountCode": "9999",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Uncategorized Expense",
+                    "Description": "Check 1108",
+                    "NetAmount": 1684.71,
+                    "GrossAmount": 1684.71,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "85cd5993-966f-4668-83f4-842527b9f74d",
+            "JournalDate": "/Date(1692316800000+0000)/",
+            "JournalNumber": 41,
+            "CreatedDateUTC": "/Date(1692731014770+0000)/",
+            "SourceID": "44c7b2d6-8558-4564-9752-3b331574c5d8",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "3987e520-af8b-4356-a525-afac77573d0e",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -773.0,
+                    "GrossAmount": -773.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "ae698b65-c25c-4992-b685-166a7c6caee4",
+                    "AccountID": "cb9a4b84-82ad-42a7-9dea-6acebd482a98",
+                    "AccountCode": "9999",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Uncategorized Expense",
+                    "Description": "Check 1131",
+                    "NetAmount": 773.0,
+                    "GrossAmount": 773.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "58de3ab5-eac0-46d9-88ba-9383b55f1a02",
+            "JournalDate": "/Date(1674518400000+0000)/",
+            "JournalNumber": 42,
+            "CreatedDateUTC": "/Date(1692731165873+0000)/",
+            "SourceID": "01bb21a4-ed94-480d-8d2f-532ba3c94841",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "209743fc-1340-4546-b94b-1781e7f188bd",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -100.0,
+                    "GrossAmount": -100.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "2bd2beb0-eb1c-4a8f-9c76-a76e056b264b",
+                    "AccountID": "f3cc8f11-7330-4a2a-924a-f3b4865ce552",
+                    "AccountCode": "640",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Legal Expenses",
+                    "Description": "",
+                    "NetAmount": 100.0,
+                    "GrossAmount": 100.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "a958e040-fd8f-4bf6-a9d6-f119689668ad",
+            "JournalDate": "/Date(1674518400000+0000)/",
+            "JournalNumber": 43,
+            "CreatedDateUTC": "/Date(1692731173123+0000)/",
+            "SourceID": "014e31da-e1cb-4a86-9efc-d9ad61ceb630",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "04a58777-435d-4bcc-9636-975e0d889582",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -24.0,
+                    "GrossAmount": -24.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "3bbf6702-c6c9-41cb-9a94-32b0f711a794",
+                    "AccountID": "300858dc-fe81-4c61-b7bc-5bdbef41536a",
+                    "AccountCode": "6442",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Software and website",
+                    "Description": "",
+                    "NetAmount": 24.0,
+                    "GrossAmount": 24.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "a4564088-d140-4293-998d-4389172dd53d",
+            "JournalDate": "/Date(1679270400000+0000)/",
+            "JournalNumber": 44,
+            "CreatedDateUTC": "/Date(1692731181070+0000)/",
+            "SourceID": "b9c120c3-a60b-4748-a4fc-9f032a839768",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "8be835f2-8a53-4a8b-a46d-5b6889e9c7a3",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -31.69,
+                    "GrossAmount": -31.69,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "ba3e76af-f2d6-4620-a2fb-e2d688e6ea2b",
+                    "AccountID": "2d44c207-7eab-4733-85ca-847426b849f6",
+                    "AccountCode": "6540",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Supplies",
+                    "Description": "",
+                    "NetAmount": 31.69,
+                    "GrossAmount": 31.69,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "00800e9a-326b-4e64-a51c-a778cc1de37f",
+            "JournalDate": "/Date(1691539200000+0000)/",
+            "JournalNumber": 45,
+            "CreatedDateUTC": "/Date(1692731215583+0000)/",
+            "SourceID": "4ff15f64-4512-43eb-b021-b48da03c03da",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "b8d29b0a-5ba7-4373-b9f7-11896e63df92",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -13.89,
+                    "GrossAmount": -13.89,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "ad60b9b1-ebca-4a12-b33e-a37ba88eccfe",
+                    "AccountID": "2d44c207-7eab-4733-85ca-847426b849f6",
+                    "AccountCode": "6540",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Supplies",
+                    "Description": "",
+                    "NetAmount": 13.89,
+                    "GrossAmount": 13.89,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "7c6a3977-022c-4cd5-9af8-e8c8e23cd0d7",
+            "JournalDate": "/Date(1691971200000+0000)/",
+            "JournalNumber": 46,
+            "CreatedDateUTC": "/Date(1692731253933+0000)/",
+            "Reference": "",
+            "SourceID": "b1cfa993-3a68-4f67-a8c6-2ed59fbafa44",
+            "SourceType": "CASHREC",
+            "JournalLines": [
+                {
+                    "JournalLineID": "40b49fb8-4e32-4fee-bfd2-d47bca73b83d",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 86.38,
+                    "GrossAmount": 86.38,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "28113517-4d16-47c7-9ffc-d58837df0be0",
+                    "AccountID": "cb9a4b84-82ad-42a7-9dea-6acebd482a98",
+                    "AccountCode": "9999",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Uncategorized Expense",
+                    "Description": "",
+                    "NetAmount": -86.38,
+                    "GrossAmount": -86.38,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "08b38ece-ef8e-47eb-99f5-e96765954e92",
+            "JournalDate": "/Date(1691971200000+0000)/",
+            "JournalNumber": 47,
+            "CreatedDateUTC": "/Date(1692731345733+0000)/",
+            "SourceID": "3d73daba-faac-455d-a650-1bf5328b844f",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "a2c28738-35e1-4dc2-850f-ffe82166f2ef",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -467.32,
+                    "GrossAmount": -467.32,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "bf9b3adb-f4c6-4079-940e-577027e9a6b2",
+                    "AccountID": "a6673976-6329-410f-8aa4-ff3880fbe829",
+                    "AccountCode": "6400",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Legal Fees",
+                    "Description": "",
+                    "NetAmount": 467.32,
+                    "GrossAmount": 467.32,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "f19c4ef2-a477-48c8-bbcd-0e5cb4730a6a",
+            "JournalDate": "/Date(1692057600000+0000)/",
+            "JournalNumber": 48,
+            "CreatedDateUTC": "/Date(1692731437457+0000)/",
+            "SourceID": "c9b9d382-763f-40ca-af4f-cf9420b4ffa5",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "0c8bf639-e553-45a1-81a1-087c545bf13f",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -36.18,
+                    "GrossAmount": -36.18,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "03e7be41-646c-4249-a4d8-a73b73dbd1f3",
+                    "AccountID": "2d44c207-7eab-4733-85ca-847426b849f6",
+                    "AccountCode": "6540",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Supplies",
+                    "Description": "",
+                    "NetAmount": 36.18,
+                    "GrossAmount": 36.18,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "70fd7c20-62d4-44fb-9faf-01989de37c5a",
+            "JournalDate": "/Date(1691798400000+0000)/",
+            "JournalNumber": 49,
+            "CreatedDateUTC": "/Date(1692731456930+0000)/",
+            "Reference": "",
+            "SourceID": "95023bb1-9a11-44db-b6d9-7341067712dc",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "75eb2301-d088-40e7-a9c7-970eb73d4872",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -348.48,
+                    "GrossAmount": -348.48,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "33c83aac-ab44-44a4-b62b-444e5b9bb407",
+                    "AccountID": "cb9a4b84-82ad-42a7-9dea-6acebd482a98",
+                    "AccountCode": "9999",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Uncategorized Expense",
+                    "Description": "",
+                    "NetAmount": 348.48,
+                    "GrossAmount": 348.48,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "c94c65fa-5f8a-4355-b711-e419602d6f16",
+            "JournalDate": "/Date(1691971200000+0000)/",
+            "JournalNumber": 50,
+            "CreatedDateUTC": "/Date(1692731501723+0000)/",
+            "Reference": "",
+            "SourceID": "4120f84c-d12d-459e-85d7-cafe35b61b6a",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "ea66748c-3229-4092-b6f4-48285391414c",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -14.02,
+                    "GrossAmount": -14.02,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "5a14c3b1-6219-4084-bd53-0ade263931a7",
+                    "AccountID": "cb9a4b84-82ad-42a7-9dea-6acebd482a98",
+                    "AccountCode": "9999",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Uncategorized Expense",
+                    "Description": "",
+                    "NetAmount": 14.02,
+                    "GrossAmount": 14.02,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "ed4b1040-d7f5-4186-8880-857e71e5aa4e",
+            "JournalDate": "/Date(1687305600000+0000)/",
+            "JournalNumber": 51,
+            "CreatedDateUTC": "/Date(1692731898263+0000)/",
+            "Reference": "",
+            "SourceID": "c40ec259-a30a-412b-93c4-9da154f63bf2",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "f95408c9-0fe0-4337-8e19-05e9a218e8ab",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "f14853b4-0a6f-4d4b-8f85-cade98747c9c",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "6f8a3f61-4fdf-4e77-8c3d-b0d2ae656126",
+            "JournalDate": "/Date(1690156800000+0000)/",
+            "JournalNumber": 52,
+            "CreatedDateUTC": "/Date(1692731898313+0000)/",
+            "Reference": "",
+            "SourceID": "3d1a2166-ee7b-4fab-97e2-cb6e30f535a8",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "c47b91a6-637a-4db0-89ae-86793a58bbc1",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "81204a30-fc2e-4aa0-87a1-922492fd1190",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "07b18944-b3ba-4042-b8b2-4f557888cb7a",
+            "JournalDate": "/Date(1688083200000+0000)/",
+            "JournalNumber": 53,
+            "CreatedDateUTC": "/Date(1692978709683+0000)/",
+            "JournalLines": [
+                {
+                    "JournalLineID": "3ae45338-c6dc-40e5-ab53-d30d36245df6",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 1894.26,
+                    "GrossAmount": 1894.26,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "ee0e7423-666d-438f-8663-e8bda4f8d07d",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -2400.26,
+                    "GrossAmount": -2400.26,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "952ba627-9e1f-45ac-817d-a740605f2ada",
+                    "AccountID": "50a5d51e-cf18-4959-ba97-de8cd9d696b9",
+                    "AccountCode": "644",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Utilities",
+                    "Description": "",
+                    "NetAmount": 461.0,
+                    "GrossAmount": 461.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "a2fcdef7-f980-4470-a43f-34ead98ad866",
+                    "AccountID": "0f055744-a99e-415f-827e-ab1b3f82e3fb",
+                    "AccountCode": "676",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Dues and subscriptions",
+                    "Description": "",
+                    "NetAmount": 45.0,
+                    "GrossAmount": 45.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "e53b54ad-48d9-4121-aa94-f03af81032c9",
+            "JournalDate": "/Date(1688083200000+0000)/",
+            "JournalNumber": 54,
+            "CreatedDateUTC": "/Date(1692978709743+0000)/",
+            "JournalLines": [
+                {
+                    "JournalLineID": "c6e2c304-8b6c-4654-9d4a-290f67084f9c",
+                    "AccountID": "cb9a4b84-82ad-42a7-9dea-6acebd482a98",
+                    "AccountCode": "9999",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Uncategorized Expense",
+                    "Description": "",
+                    "NetAmount": -40.0,
+                    "GrossAmount": -40.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "649204be-1d9b-470a-8b40-8e3214096ff8",
+                    "AccountID": "300858dc-fe81-4c61-b7bc-5bdbef41536a",
+                    "AccountCode": "6442",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Software and website",
+                    "Description": "",
+                    "NetAmount": -69.0,
+                    "GrossAmount": -69.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "1dbfc08c-ff13-40a9-861b-709937507bc5",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -1723.57,
+                    "GrossAmount": -1723.57,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "63490d3f-866a-45cc-a69e-3c6f1e18c206",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 6021.06,
+                    "GrossAmount": 6021.06,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "752ad33b-edd6-4740-a3f4-4fa1c45c230c",
+                    "AccountID": "f3cc8f11-7330-4a2a-924a-f3b4865ce552",
+                    "AccountCode": "640",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Legal Expenses",
+                    "Description": "",
+                    "NetAmount": -100.0,
+                    "GrossAmount": -100.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "7eea5f54-3ead-4676-aea6-f89cf1a05338",
+                    "AccountID": "b621f78e-c147-4bf5-a8aa-e727ede049f3",
+                    "AccountCode": "320",
+                    "AccountType": "EQUITY",
+                    "AccountName": "Retained Earnings",
+                    "Description": "",
+                    "NetAmount": -3595.8,
+                    "GrossAmount": -3595.8,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "93ba2a52-3d74-43e5-99a2-b98da00aef2a",
+                    "AccountID": "50a5d51e-cf18-4959-ba97-de8cd9d696b9",
+                    "AccountCode": "644",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Utilities",
+                    "Description": "",
+                    "NetAmount": -461.0,
+                    "GrossAmount": -461.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "f8bfce40-9db7-4118-a941-704f3d1d1b7e",
+                    "AccountID": "2d44c207-7eab-4733-85ca-847426b849f6",
+                    "AccountCode": "6540",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Supplies",
+                    "Description": "",
+                    "NetAmount": -31.69,
+                    "GrossAmount": -31.69,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "dbaf7658-6d25-4d3a-ab8b-8c6d1e37ee16",
+            "JournalDate": "/Date(1674172800000+0000)/",
+            "JournalNumber": 55,
+            "CreatedDateUTC": "/Date(1692980321337+0000)/",
+            "Reference": "",
+            "SourceID": "3f41c7ad-6ea8-407b-8a03-a7ffe482e7e0",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "4aa99562-0277-415f-a099-38da56a4e606",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -1753.57,
+                    "GrossAmount": -1753.57,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "27a4dab9-1d0b-4618-bce5-fc5e20f0011c",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 1753.57,
+                    "GrossAmount": 1753.57,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "8612eddc-9933-4035-8846-70901003be93",
+            "JournalDate": "/Date(1674518400000+0000)/",
+            "JournalNumber": 56,
+            "CreatedDateUTC": "/Date(1692980321400+0000)/",
+            "SourceID": "01bb21a4-ed94-480d-8d2f-532ba3c94841",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "e8532cad-e049-45d1-af52-358cdaa4d881",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 100.0,
+                    "GrossAmount": 100.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "49466be9-0203-452e-b978-144de72c8618",
+                    "AccountID": "f3cc8f11-7330-4a2a-924a-f3b4865ce552",
+                    "AccountCode": "640",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Legal Expenses",
+                    "Description": "",
+                    "NetAmount": -100.0,
+                    "GrossAmount": -100.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "2213854a-2c32-407f-a097-82a5bded33de",
+            "JournalDate": "/Date(1674518400000+0000)/",
+            "JournalNumber": 57,
+            "CreatedDateUTC": "/Date(1692980321447+0000)/",
+            "SourceID": "014e31da-e1cb-4a86-9efc-d9ad61ceb630",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "060cd96b-c33d-4fec-9710-5971e59c19d5",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 24.0,
+                    "GrossAmount": 24.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "cd0ce59e-9640-44b9-a6e5-79503c1199af",
+                    "AccountID": "300858dc-fe81-4c61-b7bc-5bdbef41536a",
+                    "AccountCode": "6442",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Software and website",
+                    "Description": "",
+                    "NetAmount": -24.0,
+                    "GrossAmount": -24.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "34ec51e7-1473-4683-b85a-6fbcd8136074",
+            "JournalDate": "/Date(1677024000000+0000)/",
+            "JournalNumber": 58,
+            "CreatedDateUTC": "/Date(1692980321507+0000)/",
+            "Reference": "",
+            "SourceID": "205f5308-2612-4de6-bee4-36ec0538dca5",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "7f255594-cdf5-4b0a-8495-333e5ec3f868",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -124.0,
+                    "GrossAmount": -124.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "75d99849-4a2d-4b8b-b512-74c7bedc7b15",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 124.0,
+                    "GrossAmount": 124.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "5615fcf4-c5f9-4478-8c68-3b8f1c344db1",
+            "JournalDate": "/Date(1679270400000+0000)/",
+            "JournalNumber": 59,
+            "CreatedDateUTC": "/Date(1692980321570+0000)/",
+            "SourceID": "b9c120c3-a60b-4748-a4fc-9f032a839768",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "2420182e-90a8-4ee7-bb70-a542ee39c7fb",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 31.69,
+                    "GrossAmount": 31.69,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "8b037d05-1544-4697-b35b-9ef2bbea6afb",
+                    "AccountID": "2d44c207-7eab-4733-85ca-847426b849f6",
+                    "AccountCode": "6540",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Supplies",
+                    "Description": "",
+                    "NetAmount": -31.69,
+                    "GrossAmount": -31.69,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "a63204b7-f330-41de-bf49-51cde0264aca",
+            "JournalDate": "/Date(1680652800000+0000)/",
+            "JournalNumber": 60,
+            "CreatedDateUTC": "/Date(1692980321617+0000)/",
+            "SourceID": "f725b3c7-fd8c-493d-b0f9-3e0ec66c707f",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "80588a07-b0d9-4851-b74c-4b6b952b5f46",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "f5e00344-9a56-44a8-89d5-4c6a0e72e692",
+                    "AccountID": "300858dc-fe81-4c61-b7bc-5bdbef41536a",
+                    "AccountCode": "6442",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Software and website",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "20160197-9740-428b-8d66-5ccb0670b7ae",
+            "JournalDate": "/Date(1682035200000+0000)/",
+            "JournalNumber": 61,
+            "CreatedDateUTC": "/Date(1692980321697+0000)/",
+            "Reference": "",
+            "SourceID": "6436827e-d3a7-4026-80ce-566b95833bd3",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "99d19979-cdc2-45a9-b209-47b01029d8fb",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -31.69,
+                    "GrossAmount": -31.69,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "0411799b-d2b2-4b3f-96a9-44479c98457d",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 31.69,
+                    "GrossAmount": 31.69,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "4234af9e-3e65-489b-807d-a64c298cb158",
+            "JournalDate": "/Date(1683244800000+0000)/",
+            "JournalNumber": 62,
+            "CreatedDateUTC": "/Date(1692980321740+0000)/",
+            "SourceID": "64dcaa8b-0615-4bd8-ae80-eb95b233c7cd",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "30819ccc-eec4-400f-81e0-51bbf006741a",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "0032ed82-af51-48b2-b10a-0194a31972e3",
+                    "AccountID": "300858dc-fe81-4c61-b7bc-5bdbef41536a",
+                    "AccountCode": "6442",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Software and website",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "f3e4fb00-e686-4b90-9647-6b91bed8c701",
+            "JournalDate": "/Date(1684713600000+0000)/",
+            "JournalNumber": 63,
+            "CreatedDateUTC": "/Date(1692980321833+0000)/",
+            "Reference": "",
+            "SourceID": "c76dd42a-fb4d-4bb1-821f-1faf1fc196ee",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "6272d731-413e-42a9-b9fd-a91a45a1a25f",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "30bc5afe-b88d-43eb-9d0c-7a196a23fad1",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "3c8f5d12-7fdb-4ac9-b2d8-199a0ca33eac",
+            "JournalDate": "/Date(1685923200000+0000)/",
+            "JournalNumber": 64,
+            "CreatedDateUTC": "/Date(1692980321897+0000)/",
+            "SourceID": "3929b158-e08b-4fc4-bc95-418e94e25b50",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "ef997b8a-3b04-4f9b-bd1b-7c779f9178f3",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "95fdd49c-ca44-494a-be06-dbe4518860d2",
+                    "AccountID": "300858dc-fe81-4c61-b7bc-5bdbef41536a",
+                    "AccountCode": "6442",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Software and website",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "1d0e91dd-6542-4c57-8c1c-4950a93767ee",
+            "JournalDate": "/Date(1674432000000+0000)/",
+            "JournalNumber": 65,
+            "CreatedDateUTC": "/Date(1692982371470+0000)/",
+            "Reference": "",
+            "SourceID": "b3573be2-2bf0-4091-8683-ca6b46250046",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "361913b1-579f-4210-b95e-fd9b041fd088",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 1753.57,
+                    "GrossAmount": 1753.57,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "fd75d9dc-5d9f-4d9b-833f-17f6e525ac34",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -1753.57,
+                    "GrossAmount": -1753.57,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "48e4f111-ad7b-44af-83e4-d3cdc32d4b54",
+            "JournalDate": "/Date(1676937600000+0000)/",
+            "JournalNumber": 66,
+            "CreatedDateUTC": "/Date(1692982572447+0000)/",
+            "Reference": "",
+            "SourceID": "91d4e807-ac24-45a1-80e4-6adcc5f77f38",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "bd191fa0-ad10-4bac-a2a2-987f6c3f580b",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 124.0,
+                    "GrossAmount": 124.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "e4871ae8-031e-4d2f-ba4e-acdc5d7c3c2e",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -124.0,
+                    "GrossAmount": -124.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "a0eaa591-2488-471d-9689-a3dde4419493",
+            "JournalDate": "/Date(1682035200000+0000)/",
+            "JournalNumber": 67,
+            "CreatedDateUTC": "/Date(1692982573697+0000)/",
+            "Reference": "",
+            "SourceID": "5f05527a-9a60-42e1-bc60-c7836b522db0",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "2bbc85e7-2ced-46ae-a191-942c2c4bc9ea",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 31.69,
+                    "GrossAmount": 31.69,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "cf1581b2-f9b2-4604-929e-3a874f13ee42",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -31.69,
+                    "GrossAmount": -31.69,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "a0159109-77fa-4664-9220-9d67b73c8cd5",
+            "JournalDate": "/Date(1684627200000+0000)/",
+            "JournalNumber": 68,
+            "CreatedDateUTC": "/Date(1692982578307+0000)/",
+            "Reference": "",
+            "SourceID": "73e6ab17-517a-4e81-a0c0-2e812be2eecd",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "fc14676a-29ce-4688-ab83-38b70d28f1cf",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "d700cf74-6534-48cd-b1e8-2a0f1b3b819e",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "c169e65f-396c-4a4b-8cf9-faf45aac72b5",
+            "JournalDate": "/Date(1687305600000+0000)/",
+            "JournalNumber": 69,
+            "CreatedDateUTC": "/Date(1692983090710+0000)/",
+            "Reference": "",
+            "SourceID": "526281af-d6f5-49a0-afd2-9c1e8a8be37d",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "31e38a86-0081-4f97-a5cf-02136eea7ba1",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "f8137b84-c1ba-4647-b7b0-3e75b489eb85",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "dbf24b91-8e51-4391-80a8-08c69aa9c68d",
+            "JournalDate": "/Date(1690156800000+0000)/",
+            "JournalNumber": 70,
+            "CreatedDateUTC": "/Date(1692983091390+0000)/",
+            "Reference": "",
+            "SourceID": "7f059986-9349-4939-ac02-89fb90ed69d9",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "30129975-2195-4d4c-b8cc-b3af782184f2",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "202095b2-be3f-4814-b5de-fdc442cf3aac",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "19f47803-e6b1-42f2-86e6-86258753970e",
+            "JournalDate": "/Date(1684627200000+0000)/",
+            "JournalNumber": 71,
+            "CreatedDateUTC": "/Date(1692988728907+0000)/",
+            "Reference": "",
+            "SourceID": "73e6ab17-517a-4e81-a0c0-2e812be2eecd",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "d4eb2cb7-25c3-4dd0-8ffd-f7187c8bbc28",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "5f381749-1a53-42d5-89bc-06cb8525b899",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "7ec7e552-0163-4696-81c4-0860a622708b",
+            "JournalDate": "/Date(1687305600000+0000)/",
+            "JournalNumber": 72,
+            "CreatedDateUTC": "/Date(1692988728983+0000)/",
+            "Reference": "",
+            "SourceID": "526281af-d6f5-49a0-afd2-9c1e8a8be37d",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "4b1ce8d9-07f9-4d15-bd35-6535dadac01e",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "6c761044-2270-4aac-b0ed-8dbe8a7a8bff",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "a93352d0-5f8d-47a6-8516-63bef30e062b",
+            "JournalDate": "/Date(1690156800000+0000)/",
+            "JournalNumber": 73,
+            "CreatedDateUTC": "/Date(1692988729033+0000)/",
+            "Reference": "",
+            "SourceID": "7f059986-9349-4939-ac02-89fb90ed69d9",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "e37bb016-4a67-4496-b405-4ffc7f3c5480",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "049048be-dd53-4111-8735-78a408771f71",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "b1e7eb9d-9132-46eb-a5c0-bf2df08129ee",
+            "JournalDate": "/Date(1682035200000+0000)/",
+            "JournalNumber": 74,
+            "CreatedDateUTC": "/Date(1692988729147+0000)/",
+            "Reference": "",
+            "SourceID": "5f05527a-9a60-42e1-bc60-c7836b522db0",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "25137eba-ec7f-4b84-b4e9-6a50a1d22f48",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -31.69,
+                    "GrossAmount": -31.69,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "29b2924e-7ad9-41a4-82ee-24f77a0dc8c9",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 31.69,
+                    "GrossAmount": 31.69,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "ca8c05b7-cbdc-4c5a-8371-e82f59d31075",
+            "JournalDate": "/Date(1676937600000+0000)/",
+            "JournalNumber": 75,
+            "CreatedDateUTC": "/Date(1692988729240+0000)/",
+            "Reference": "",
+            "SourceID": "91d4e807-ac24-45a1-80e4-6adcc5f77f38",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "01b1070b-3842-4887-b506-932c1530c691",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -124.0,
+                    "GrossAmount": -124.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "011ad7d7-e517-4e13-8916-573eb20cee8e",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 124.0,
+                    "GrossAmount": 124.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "9e5698f3-4b3a-4985-81de-ff2496e8227d",
+            "JournalDate": "/Date(1674432000000+0000)/",
+            "JournalNumber": 76,
+            "CreatedDateUTC": "/Date(1692988729333+0000)/",
+            "Reference": "",
+            "SourceID": "b3573be2-2bf0-4091-8683-ca6b46250046",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "dc28b107-0a94-4bb5-9b5a-9541336be2a6",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -1753.57,
+                    "GrossAmount": -1753.57,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "7358488e-cd15-4572-bd16-13be3d766173",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 1753.57,
+                    "GrossAmount": 1753.57,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "e2c3e9e0-1e25-4543-b53c-1105605a2224",
+            "JournalDate": "/Date(1688083200000+0000)/",
+            "JournalNumber": 77,
+            "CreatedDateUTC": "/Date(1692989011623+0000)/",
+            "JournalLines": [
+                {
+                    "JournalLineID": "b2c14085-b9ce-4571-a4bd-67806bb1b7a6",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 1723.57,
+                    "GrossAmount": 1723.57,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "5c438a71-ca01-4f9a-b97a-d521cf0f58d5",
+                    "AccountID": "cb9a4b84-82ad-42a7-9dea-6acebd482a98",
+                    "AccountCode": "9999",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Uncategorized Expense",
+                    "Description": "",
+                    "NetAmount": 40.0,
+                    "GrossAmount": 40.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "32e10379-e159-40b6-b042-33dd397bd28f",
+                    "AccountID": "300858dc-fe81-4c61-b7bc-5bdbef41536a",
+                    "AccountCode": "6442",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Software and website",
+                    "Description": "",
+                    "NetAmount": 69.0,
+                    "GrossAmount": 69.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "55dff2a4-e73e-444f-9978-af0940f69594",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -6021.06,
+                    "GrossAmount": -6021.06,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "978a2300-4502-46f2-bd56-8866ab36acb0",
+                    "AccountID": "50a5d51e-cf18-4959-ba97-de8cd9d696b9",
+                    "AccountCode": "644",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Utilities",
+                    "Description": "",
+                    "NetAmount": 461.0,
+                    "GrossAmount": 461.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "d1f26c27-c331-456e-9743-e36e81b5d51d",
+                    "AccountID": "b621f78e-c147-4bf5-a8aa-e727ede049f3",
+                    "AccountCode": "320",
+                    "AccountType": "EQUITY",
+                    "AccountName": "Retained Earnings",
+                    "Description": "",
+                    "NetAmount": 3595.8,
+                    "GrossAmount": 3595.8,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "82865278-a148-43b1-9ba3-c776fcc6d613",
+                    "AccountID": "f3cc8f11-7330-4a2a-924a-f3b4865ce552",
+                    "AccountCode": "640",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Legal Expenses",
+                    "Description": "",
+                    "NetAmount": 100.0,
+                    "GrossAmount": 100.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "7d00a84f-3e52-4df5-b5d0-55d4a5524007",
+                    "AccountID": "2d44c207-7eab-4733-85ca-847426b849f6",
+                    "AccountCode": "6540",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Supplies",
+                    "Description": "",
+                    "NetAmount": 31.69,
+                    "GrossAmount": 31.69,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "122f5ecc-f379-4f0b-8db9-09f307a88939",
+            "JournalDate": "/Date(1688083200000+0000)/",
+            "JournalNumber": 78,
+            "CreatedDateUTC": "/Date(1692989011763+0000)/",
+            "JournalLines": [
+                {
+                    "JournalLineID": "bafe670a-a4a4-478a-a1a9-0191bed698b6",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 1753.57,
+                    "GrossAmount": 1753.57,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "1e5c5273-8316-4695-9804-ae9007d5c945",
+                    "AccountID": "cb9a4b84-82ad-42a7-9dea-6acebd482a98",
+                    "AccountCode": "9999",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Uncategorized Expense",
+                    "Description": "",
+                    "NetAmount": -40.0,
+                    "GrossAmount": -40.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "d7a6148c-69ac-42f4-b34a-bb8877735ac0",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 4096.8,
+                    "GrossAmount": 4096.8,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "fa42272b-3bcf-4330-81c8-8afe04af5fde",
+                    "AccountID": "b621f78e-c147-4bf5-a8aa-e727ede049f3",
+                    "AccountCode": "320",
+                    "AccountType": "EQUITY",
+                    "AccountName": "Retained Earnings",
+                    "Description": "",
+                    "NetAmount": -3595.8,
+                    "GrossAmount": -3595.8,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "28c2635d-feea-4a6a-9bd2-d939b743dda2",
+                    "AccountID": "50a5d51e-cf18-4959-ba97-de8cd9d696b9",
+                    "AccountCode": "644",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Utilities",
+                    "Description": "",
+                    "NetAmount": -461.0,
+                    "GrossAmount": -461.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "52f23934-6a1e-4acc-94b0-a229e963a2b1",
+                    "AccountID": "40f5c2c5-ae3d-4a72-99ca-cbc575c0423a",
+                    "AccountCode": "255",
+                    "AccountType": "CURRLIAB",
+                    "AccountName": "Historical Adjustment",
+                    "Description": "",
+                    "NetAmount": -1753.57,
+                    "GrossAmount": -1753.57,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "30682038-5e1f-4ae4-97fd-8e963292326e",
+            "JournalDate": "/Date(1674172800000+0000)/",
+            "JournalNumber": 79,
+            "CreatedDateUTC": "/Date(1692989471297+0000)/",
+            "Reference": "",
+            "SourceID": "3f01cd11-b5a8-483d-bfb4-673beb3dce44",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "1c425404-9dcf-46ae-9f72-74fdc9639f7c",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 1753.57,
+                    "GrossAmount": 1753.57,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "3245aa16-28d7-4ca3-a78c-75d55354d606",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -1753.57,
+                    "GrossAmount": -1753.57,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "ae39207a-9d93-4b8a-b4f5-85ef88fec479",
+            "JournalDate": "/Date(1676937600000+0000)/",
+            "JournalNumber": 80,
+            "CreatedDateUTC": "/Date(1692989473437+0000)/",
+            "Reference": "",
+            "SourceID": "a5970c9c-9b09-4397-b779-22ea82d02829",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "d1928008-ee5e-471e-b3b8-85a6d99200f9",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 124.0,
+                    "GrossAmount": 124.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "6d570574-dcde-4477-8b19-13673c33e878",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -124.0,
+                    "GrossAmount": -124.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "2419a0e6-6ab8-43ed-96a7-1dc99b041b2b",
+            "JournalDate": "/Date(1682035200000+0000)/",
+            "JournalNumber": 81,
+            "CreatedDateUTC": "/Date(1692989475473+0000)/",
+            "Reference": "",
+            "SourceID": "38b956f3-9c50-487f-a4fb-811c1bb9b338",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "5cdb20e6-b549-4a93-b05a-2c5fc0d5812f",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 31.69,
+                    "GrossAmount": 31.69,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "83183bda-eb93-4e85-8de8-a524759aab36",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -31.69,
+                    "GrossAmount": -31.69,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "96f738d1-4668-436e-b1de-1dd2c795808b",
+            "JournalDate": "/Date(1684627200000+0000)/",
+            "JournalNumber": 82,
+            "CreatedDateUTC": "/Date(1692989477073+0000)/",
+            "Reference": "",
+            "SourceID": "8fe9a017-c86f-473b-8b9d-acc35fc702a3",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "675f6bdb-ccc8-43e2-82f6-9e2e840f580c",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "68f44f81-0935-4e0d-8033-f6ad5e5e3a7d",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "44c8446a-fea8-4e2c-b3f4-f22c931f70e3",
+            "JournalDate": "/Date(1683244800000+0000)/",
+            "JournalNumber": 83,
+            "CreatedDateUTC": "/Date(1692989494087+0000)/",
+            "SourceID": "40c33aae-c22c-4544-8cef-4032b593a42f",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "97c9b901-e930-44dc-8fbe-a495f19f01c3",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "8d06e3a3-c753-45f8-b5a6-0db8698c1c98",
+                    "AccountID": "300858dc-fe81-4c61-b7bc-5bdbef41536a",
+                    "AccountCode": "6442",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Software and website",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "3f69a08c-c253-44cd-9a28-2c2b221bc03c",
+            "JournalDate": "/Date(1685923200000+0000)/",
+            "JournalNumber": 84,
+            "CreatedDateUTC": "/Date(1692989496607+0000)/",
+            "SourceID": "c925a639-31d1-4efa-b6b3-5ed430b3e258",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "5e522f79-69f7-4c02-91a5-b80f26f64dd4",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "73428fa4-1cb2-4f3d-8f07-daa0ba5adbeb",
+                    "AccountID": "300858dc-fe81-4c61-b7bc-5bdbef41536a",
+                    "AccountCode": "6442",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Software and website",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "0ad0968a-c0e4-4606-9764-139cfcc54f9b",
+            "JournalDate": "/Date(1680652800000+0000)/",
+            "JournalNumber": 85,
+            "CreatedDateUTC": "/Date(1692989499590+0000)/",
+            "SourceID": "0614b9d1-5b3f-45b9-8c9b-4fe785af8721",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "eba272f0-da84-4273-b4e6-1746a8190f88",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -15.0,
+                    "GrossAmount": -15.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "b7b7d1b3-72b1-4cea-b3c4-c0f3d7219753",
+                    "AccountID": "300858dc-fe81-4c61-b7bc-5bdbef41536a",
+                    "AccountCode": "6442",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Software and website",
+                    "Description": "",
+                    "NetAmount": 15.0,
+                    "GrossAmount": 15.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "bacfd5f5-446b-44aa-9a18-d72155658206",
+            "JournalDate": "/Date(1674518400000+0000)/",
+            "JournalNumber": 86,
+            "CreatedDateUTC": "/Date(1692989530400+0000)/",
+            "SourceID": "f8756afc-e348-461a-a4a5-7884fa07b587",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "8c4e8948-ea72-4067-a30a-f3f26b63a06c",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -24.0,
+                    "GrossAmount": -24.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "668ebb5a-9946-4650-b433-eb0d1efaac61",
+                    "AccountID": "300858dc-fe81-4c61-b7bc-5bdbef41536a",
+                    "AccountCode": "6442",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Software and website",
+                    "Description": "",
+                    "NetAmount": 24.0,
+                    "GrossAmount": 24.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "9d287ba5-88ec-4e63-8901-772748cf29b3",
+            "JournalDate": "/Date(1679270400000+0000)/",
+            "JournalNumber": 87,
+            "CreatedDateUTC": "/Date(1692989544250+0000)/",
+            "SourceID": "20111f25-2cad-4408-bb6c-6b46516d3f6a",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "52c21135-65da-4524-889a-ce9fa2714577",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -31.69,
+                    "GrossAmount": -31.69,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "51a84307-90d3-49a4-98ef-c9ed4ec61085",
+                    "AccountID": "2d44c207-7eab-4733-85ca-847426b849f6",
+                    "AccountCode": "6540",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Supplies",
+                    "Description": "",
+                    "NetAmount": 31.69,
+                    "GrossAmount": 31.69,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "cff63ba5-bbc2-440e-be64-f16ab209a1ed",
+            "JournalDate": "/Date(1674518400000+0000)/",
+            "JournalNumber": 88,
+            "CreatedDateUTC": "/Date(1692989576413+0000)/",
+            "SourceID": "29e96fad-cbc4-4849-8f89-afe6fa1b9943",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "2c3905b2-a54d-4de3-8967-44fb5ec8c448",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -100.0,
+                    "GrossAmount": -100.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "79fa9fef-ec7c-4932-bf9d-b6a2c5767ff1",
+                    "AccountID": "a6673976-6329-410f-8aa4-ff3880fbe829",
+                    "AccountCode": "6400",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Legal Fees",
+                    "Description": "",
+                    "NetAmount": 100.0,
+                    "GrossAmount": 100.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "ac62cdf8-238f-4dc2-a668-8aa9dd1b353d",
+            "JournalDate": "/Date(1692057600000+0000)/",
+            "JournalNumber": 89,
+            "CreatedDateUTC": "/Date(1692989737870+0000)/",
+            "SourceID": "42ee5734-decd-44a6-a868-f91db80e1b29",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "4bdd0ee3-4a9c-4078-90e0-7b14e7f4ace7",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 6000.0,
+                    "GrossAmount": 6000.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "4d6f907d-ced8-4c70-bab3-42f78c57b3e8",
+                    "AccountID": "cb9a4b84-82ad-42a7-9dea-6acebd482a98",
+                    "AccountCode": "9999",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Uncategorized Expense",
+                    "Description": "Check 1109",
+                    "NetAmount": -6000.0,
+                    "GrossAmount": -6000.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "6d0f19d2-f5c9-4770-9fc7-ab52fe9b9038",
+            "JournalDate": "/Date(1690848000000+0000)/",
+            "JournalNumber": 90,
+            "CreatedDateUTC": "/Date(1692989815793+0000)/",
+            "SourceID": "161fbec0-8905-4145-b590-6911c021b0e6",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "fc90f9ea-21d7-4e35-aec8-8d54c66631d0",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 123.0,
+                    "GrossAmount": 123.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "c7a3355c-a3f7-4cb5-822e-170ae53f207a",
+                    "AccountID": "50a5d51e-cf18-4959-ba97-de8cd9d696b9",
+                    "AccountCode": "644",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Utilities",
+                    "Description": "",
+                    "NetAmount": -123.0,
+                    "GrossAmount": -123.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "cdac355a-69fd-4197-b929-c6a3164473a7",
+            "JournalDate": "/Date(1691366400000+0000)/",
+            "JournalNumber": 91,
+            "CreatedDateUTC": "/Date(1692989815823+0000)/",
+            "SourceID": "22ce57da-541b-4f96-8de1-818faf2c1651",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "a7ccb79e-ebd3-4710-a160-0c1de1313731",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 2500.0,
+                    "GrossAmount": 2500.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "61a31823-f9a4-456d-aa42-ac613e343645",
+                    "AccountID": "cb9a4b84-82ad-42a7-9dea-6acebd482a98",
+                    "AccountCode": "9999",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Uncategorized Expense",
+                    "Description": "Check 1117",
+                    "NetAmount": -2500.0,
+                    "GrossAmount": -2500.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "a9c0895b-5e48-4c35-bda1-1db92ae87b49",
+            "JournalDate": "/Date(1691452800000+0000)/",
+            "JournalNumber": 92,
+            "CreatedDateUTC": "/Date(1692989815870+0000)/",
+            "SourceID": "3d62b5c8-7db1-4aae-9bf8-920f4662eea9",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "d446394c-0bdf-426f-8f49-9d4b9248acfb",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 265.0,
+                    "GrossAmount": 265.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "c5d43eb7-7f59-484b-808f-2947b3800ba4",
+                    "AccountID": "d2858320-5dea-4f29-b25c-1fda0dc8f05f",
+                    "AccountCode": "612",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Consulting and Accounting",
+                    "Description": "",
+                    "NetAmount": -265.0,
+                    "GrossAmount": -265.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "1849771c-7c84-42a8-8dcf-bfc59f286baf",
+            "JournalDate": "/Date(1692316800000+0000)/",
+            "JournalNumber": 93,
+            "CreatedDateUTC": "/Date(1692989815903+0000)/",
+            "SourceID": "2776c0a7-2188-47e8-8b89-368685c4fa00",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "073d7f53-b7df-4b53-bf6b-e017d2bd64f9",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 1684.71,
+                    "GrossAmount": 1684.71,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "52dcd073-1174-4f2a-8fc5-4c0601fae16f",
+                    "AccountID": "cb9a4b84-82ad-42a7-9dea-6acebd482a98",
+                    "AccountCode": "9999",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Uncategorized Expense",
+                    "Description": "Check 1108",
+                    "NetAmount": -1684.71,
+                    "GrossAmount": -1684.71,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "4de8cf09-2872-46fe-b3ee-4bf758bd8011",
+            "JournalDate": "/Date(1692316800000+0000)/",
+            "JournalNumber": 94,
+            "CreatedDateUTC": "/Date(1692989815933+0000)/",
+            "SourceID": "44c7b2d6-8558-4564-9752-3b331574c5d8",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "44a707e1-7842-477b-9791-4d30d65f120f",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 773.0,
+                    "GrossAmount": 773.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "554c41a6-9097-42a2-a640-d580a8c358b5",
+                    "AccountID": "cb9a4b84-82ad-42a7-9dea-6acebd482a98",
+                    "AccountCode": "9999",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Uncategorized Expense",
+                    "Description": "Check 1131",
+                    "NetAmount": -773.0,
+                    "GrossAmount": -773.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "01df5be7-ded7-4e30-8cda-2c25c8179d8f",
+            "JournalDate": "/Date(1674172800000+0000)/",
+            "JournalNumber": 95,
+            "CreatedDateUTC": "/Date(1692990075910+0000)/",
+            "Reference": "",
+            "SourceID": "3f01cd11-b5a8-483d-bfb4-673beb3dce44",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "1cf6e4d5-febf-4f98-a674-1c9430964194",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -1753.57,
+                    "GrossAmount": -1753.57,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "7df6a9ae-b026-4ee0-a123-b584b73b6ce2",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 1753.57,
+                    "GrossAmount": 1753.57,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "795ed4b2-698b-4a7b-920b-d6901ffee6b1",
+            "JournalDate": "/Date(1674518400000+0000)/",
+            "JournalNumber": 96,
+            "CreatedDateUTC": "/Date(1692990075957+0000)/",
+            "SourceID": "17ee339b-79b7-4268-a991-a1f3895e3a25",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "6b3c4744-02d2-4ded-aea4-c3187ca0e067",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 40.0,
+                    "GrossAmount": 40.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "855a3c93-48b1-482d-b850-42deafc210b2",
+                    "AccountID": "cb9a4b84-82ad-42a7-9dea-6acebd482a98",
+                    "AccountCode": "9999",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Uncategorized Expense",
+                    "Description": "Check 1099",
+                    "NetAmount": -40.0,
+                    "GrossAmount": -40.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "NONE",
+                    "TaxName": "Tax Exempt",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "e19213a3-f25e-40aa-9be0-a6c86f63a219",
+            "JournalDate": "/Date(1675209600000+0000)/",
+            "JournalNumber": 97,
+            "CreatedDateUTC": "/Date(1692990075987+0000)/",
+            "SourceID": "4b1099f8-2be3-4e9f-80ce-c57368c3dddd",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "6c0ce33e-d44c-477c-b1a9-32de44af22cb",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 62.0,
+                    "GrossAmount": 62.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "67c0d8b4-628e-4f09-9157-19d414f843ea",
+                    "AccountID": "50a5d51e-cf18-4959-ba97-de8cd9d696b9",
+                    "AccountCode": "644",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Utilities",
+                    "Description": "",
+                    "NetAmount": -62.0,
+                    "GrossAmount": -62.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "19fae08b-79fe-41cf-b634-0b0ddb5dc3f6",
+            "JournalDate": "/Date(1676937600000+0000)/",
+            "JournalNumber": 98,
+            "CreatedDateUTC": "/Date(1692990076033+0000)/",
+            "Reference": "",
+            "SourceID": "a5970c9c-9b09-4397-b779-22ea82d02829",
+            "SourceType": "TRANSFER",
+            "JournalLines": [
+                {
+                    "JournalLineID": "278c18ff-2c9f-4ec3-b559-1fa28e4703bd",
+                    "AccountID": "7ed7ff34-62da-4350-b917-51a4ffe8c106",
+                    "AccountCode": "",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CARD ...8970",
+                    "Description": "",
+                    "NetAmount": -124.0,
+                    "GrossAmount": -124.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "76a46fb7-95b1-499c-85e1-5caea73ba9b5",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 124.0,
+                    "GrossAmount": 124.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "f468f140-e994-41c3-b5f3-67ce85d88a54",
+            "JournalDate": "/Date(1677715200000+0000)/",
+            "JournalNumber": 99,
+            "CreatedDateUTC": "/Date(1692990076080+0000)/",
+            "SourceID": "0dfae050-e497-468e-892b-5fda6a663d4e",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "6ba25fcf-8b68-4766-beec-5f3f135e4f49",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 59.0,
+                    "GrossAmount": 59.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "02c95c3e-c0ea-4acd-b46d-dcf840562680",
+                    "AccountID": "50a5d51e-cf18-4959-ba97-de8cd9d696b9",
+                    "AccountCode": "644",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Utilities",
+                    "Description": "",
+                    "NetAmount": -59.0,
+                    "GrossAmount": -59.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        },
+        {
+            "JournalID": "8a8fda0a-004c-4acb-9192-fbadb4015e83",
+            "JournalDate": "/Date(1680220800000+0000)/",
+            "JournalNumber": 100,
+            "CreatedDateUTC": "/Date(1692990076113+0000)/",
+            "SourceID": "02fa7000-9ea5-4b1d-beab-88aaf3810d40",
+            "SourceType": "CASHPAID",
+            "JournalLines": [
+                {
+                    "JournalLineID": "45c6c382-e411-4010-810e-24f6f9923588",
+                    "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                    "AccountType": "BANK",
+                    "AccountName": "BUSINESS CHECKING ...0602",
+                    "Description": "",
+                    "NetAmount": 56.0,
+                    "GrossAmount": 56.0,
+                    "TaxAmount": 0.0,
+                    "TrackingCategories": []
+                },
+                {
+                    "JournalLineID": "966452b2-51bd-4e9b-8222-ef9cf5bf02cf",
+                    "AccountID": "50a5d51e-cf18-4959-ba97-de8cd9d696b9",
+                    "AccountCode": "644",
+                    "AccountType": "EXPENSE",
+                    "AccountName": "Utilities",
+                    "Description": "",
+                    "NetAmount": -56.0,
+                    "GrossAmount": -56.0,
+                    "TaxAmount": 0.0,
+                    "TaxType": "INPUT",
+                    "TaxName": "Tax on Purchases",
+                    "TrackingCategories": []
+                }
+            ]
+        }
+    ]
+}
