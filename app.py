@@ -62,7 +62,10 @@ def accounting_get_bank_transactions(access_token, tenant_id):
         print(f"Error: {response.status_code} - {response.text}")
         return None
 
-def accounting_get_journals(access_token, tenant_id):
+def accounting_get_journals(access_token, tenant_id, offset=0, uncategorized_journals=None):
+    if uncategorized_journals is None:
+        uncategorized_journals = []
+
     url = BASE_URL + 'Journals'
     headers = {
         'Authorization': f'Bearer {access_token}',
@@ -70,27 +73,46 @@ def accounting_get_journals(access_token, tenant_id):
         'Xero-tenant-id': tenant_id
     }
     params = {
-        'if-modified-since': '2024-01-01T12:17:43.202-08:00'
+        'offset': offset
     }
     response = requests.get(url, headers=headers, params=params)
     if response.status_code == 200:
-        journals = response.json()
-        with open('journals.json', 'w') as file:
-            json.dump(journals, file, indent=4)
-        uncategorized_journals = []
+        journals_response = response.json()
+        print(f"Offset: {offset}")
 
-        # Assuming 'journals' is a list of journal entries structured as in the provided data excerpt
-        for journal in journals.get('Journals', []):
+        # Assuming the journals are in a 'Journals' key in the response
+        journals = journals_response.get('Journals', [])
+
+        # Read existing data from the file
+        try:
+            with open('journals.json', 'r') as file:
+                existing_journals = json.load(file)
+        except FileNotFoundError:
+            existing_journals = []
+
+        # Append new journals to the existing data
+        existing_journals.extend(journals)
+
+        # Save the updated journal entries to the file
+        with open('journals.json', 'w') as file:
+            json.dump(existing_journals, file, indent=4)
+
+        # Check for uncategorized journals
+        for journal in journals:
             # Check if any journal line in the current journal has 'account_name' == 'Uncategorized Expense'
-            if any(line['AccountName'] == 'Uncategorized Expense' or line['AccountName'] == 'Uncategorized Income' for line in journal['JournalLines']):
+            if any(line['AccountName'] in ['Uncategorized Expense', 'Uncategorized Income'] for line in journal['JournalLines']):
                 uncategorized_journals.append(journal)
-        
-        # Return the list of uncategorized journals
-        return uncategorized_journals
+
+        # Check if more journals exist (assuming a page size of 100)
+        if len(journals) == 100:
+            # Fetch the next page of journals
+            return accounting_get_journals(access_token, tenant_id, offset=offset + 100, uncategorized_journals=uncategorized_journals)
+        else:
+            return uncategorized_journals
     else:
         print(f"Error: {response.status_code} - {response.text}")
         return None
-
+    
 def get_matched_transactions(access_token, tenant_id):
     # Fetch bank transactions
     bank_transactions_response = accounting_get_bank_transactions(access_token, tenant_id)
@@ -111,6 +133,7 @@ def get_matched_transactions(access_token, tenant_id):
 
 def match_transactions(bank_transactions, journals):
     matches = []
+    print(journals)
 
     for journal in journals:
         journal_date = journal['JournalDate']
@@ -130,7 +153,7 @@ def match_transactions(bank_transactions, journals):
                 # print('\n')
                 if (
                     Decimal(transaction['Total']) == gross_amount and
-                    transaction_date == journal_date
+                    transaction_date == journal_date and transaction['IsReconciled'] == False
                 ):
                     matches.append({
                         'date': convert_unix_time(transaction['Date']),
@@ -140,7 +163,8 @@ def match_transactions(bank_transactions, journals):
                         'contact_id': transaction['Contact']['ContactID'],
                         'account_id': transaction['BankAccount']['AccountID']
                     })
-    print(matches)                    
+    with open('matches.json', 'w') as file:
+        json.dump(matches, file, indent=4)                
     return matches
 
 def accounting_update_bank_transaction(tenant_id, bank_transaction_id, contact_id, account_id, amount, category):
@@ -194,9 +218,9 @@ def accounting_create_bank_transactions(access_token, tenant_id):
     line_item = {
         "description": "test",
         "quantity": 1.0,
-        "unit_amount": 20.0,
+        "unit_amount": 400.0,
         "account_code": "000",
-        "line_amount": 20.0
+        "line_amount": 400.0
     }
     
     # Define the bank account
@@ -212,7 +236,7 @@ def accounting_create_bank_transactions(access_token, tenant_id):
     },
     "LineItems": [{
         "Description": "Test",
-        "UnitAmount": "20.00",
+        "UnitAmount": "400.00",
         "AccountCode": "8888",
         "TaxType": "NONE",
     }],
@@ -327,6 +351,7 @@ def convert_unix_time(date_str):
         date_time = datetime.utcfromtimestamp(timestamp)  # Convert to datetime object
         return date_time.strftime('%Y-%m-%d %H:%M:%S')  # Format to readable string
     return date_str
+
 if __name__ == '__main__':
     # code_verifier = generate_code_verifier()
     # code_challenge = generate_code_challenge(code_verifier)
@@ -347,7 +372,7 @@ if __name__ == '__main__':
     
     # print("Access Token:", access_token)
     # print("Refresh Token:", refresh_token)
-    access_token = refresh_access_token('Ju5rbIqGJiRYGl7md3IE2e28Dml07rEJsZBstSVRaeU')['access_token']
+    access_token = refresh_access_token('CaUjXTscoHv8MSi5SJ9oszndYpl-aRekwemEieJYTEM')['access_token']
     accounting_create_bank_transactions(access_token=access_token, tenant_id='c0395c8a-b2e1-4c3c-b697-7e4094d9ad9b')
     # print(get_chart_of_accounts(access_token=access_token, tenant_id='c0395c8a-b2e1-4c3c-b697-7e4094d9ad9b'))
     # get_matched_transactions(access_token=access_token, tenant_id='c0395c8a-b2e1-4c3c-b697-7e4094d9ad9b')

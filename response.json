@@ -1,8 +1,8 @@
 {
-    "Id": "0714f84a-0249-4741-a940-60f4c0aed5df",
+    "Id": "c580b5df-ffc1-4b36-bb85-c1ce513ab3e3",
     "Status": "OK",
     "ProviderName": "Good Ag Test App",
-    "DateTimeUTC": "/Date(1722277869071)/",
+    "DateTimeUTC": "/Date(1722434872420)/",
     "BankTransactions": [
         {
             "BankTransactionID": "2f4bcb10-837d-47a0-a836-7702b0798530",
@@ -6690,6 +6690,93 @@
             "TotalTax": 0.0,
             "Total": 770.0,
             "UpdatedDateUTC": "/Date(1722275974713+0000)/",
+            "CurrencyCode": "USD"
+        },
+        {
+            "BankTransactionID": "66f7c849-bf6d-4b43-aed0-e615cde56f8f",
+            "BankAccount": {
+                "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                "Name": "BUSINESS CHECKING ...0602"
+            },
+            "Type": "SPEND",
+            "IsReconciled": false,
+            "HasAttachments": false,
+            "Contact": {
+                "ContactID": "5e032d33-84ed-43d7-bb79-ebfd723d411b",
+                "Name": "Test",
+                "Addresses": [],
+                "Phones": [],
+                "ContactGroups": [],
+                "ContactPersons": [],
+                "HasValidationErrors": false
+            },
+            "DateString": "2024-07-29T00:00:00",
+            "Date": "/Date(1722211200000+0000)/",
+            "Status": "DELETED",
+            "LineAmountTypes": "Inclusive",
+            "LineItems": [],
+            "SubTotal": 20.0,
+            "TotalTax": 0.0,
+            "Total": 20.0,
+            "UpdatedDateUTC": "/Date(1722284411327+0000)/",
+            "CurrencyCode": "USD"
+        },
+        {
+            "BankTransactionID": "c85b8f7f-9b82-48d2-b4ca-914aaab2f21b",
+            "BankAccount": {
+                "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                "Name": "BUSINESS CHECKING ...0602"
+            },
+            "Type": "SPEND",
+            "IsReconciled": false,
+            "HasAttachments": false,
+            "Contact": {
+                "ContactID": "5e032d33-84ed-43d7-bb79-ebfd723d411b",
+                "Name": "Test",
+                "Addresses": [],
+                "Phones": [],
+                "ContactGroups": [],
+                "ContactPersons": [],
+                "HasValidationErrors": false
+            },
+            "DateString": "2024-07-29T00:00:00",
+            "Date": "/Date(1722211200000+0000)/",
+            "Status": "DELETED",
+            "LineAmountTypes": "Inclusive",
+            "LineItems": [],
+            "SubTotal": 20.0,
+            "TotalTax": 0.0,
+            "Total": 20.0,
+            "UpdatedDateUTC": "/Date(1722290427537+0000)/",
+            "CurrencyCode": "USD"
+        },
+        {
+            "BankTransactionID": "23210bf4-2700-406b-8d6c-ac8a99142862",
+            "BankAccount": {
+                "AccountID": "69c850b6-7d21-4ee3-a598-7d5c365dba24",
+                "Name": "BUSINESS CHECKING ...0602"
+            },
+            "Type": "SPEND",
+            "IsReconciled": false,
+            "HasAttachments": false,
+            "Contact": {
+                "ContactID": "5e032d33-84ed-43d7-bb79-ebfd723d411b",
+                "Name": "Test",
+                "Addresses": [],
+                "Phones": [],
+                "ContactGroups": [],
+                "ContactPersons": [],
+                "HasValidationErrors": false
+            },
+            "DateString": "2024-07-31T00:00:00",
+            "Date": "/Date(1722384000000+0000)/",
+            "Status": "DELETED",
+            "LineAmountTypes": "Inclusive",
+            "LineItems": [],
+            "SubTotal": 20.0,
+            "TotalTax": 0.0,
+            "Total": 20.0,
+            "UpdatedDateUTC": "/Date(1722429887553+0000)/",
             "CurrencyCode": "USD"
         }
     ]
